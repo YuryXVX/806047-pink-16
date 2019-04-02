@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Пинк страница с фото</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="" width="75" height="22" alt="Логотип Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list_item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list_item site-list__item--active">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="site-list_item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list_item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+         </div>
+        </nav>
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Фотографии пользователей</h1>
+
+      <section class="photo-gallery">
+        <header class="photo-gallery__header slogan">
+          <p class="slogan__discription">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </header>
+        <div class="gallery__wrapper">
+          <h2 class="visually-hidden">Галарея фотографий</h2>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <picture class="gallery__photo-wrapper gallery__photo--panorama">
+                <img class="gallery__photo-mobile" width="320" height="137" alt="Фото пользователя">
+              </picture>
+              <span class="gallery__author-name">Анна</span>
+              <time class="gallery__time">(5 минут назад)</time>
+              <p class="gallery__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="gallery__like-wrapper">
+                <span class="gallery__like--text">Нравится:</span><span class="gallery__like--qty">215</span>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__photo-wrapper">
+                <img class="gallery__photo-mobile" width="280" height="180" alt="Фото пользователя">
+              </picture>
+              <span class="gallery__author-name">Левон</span>
+              <time class="gallery__time">(5 минут назад)</time>
+              <p class="gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="gallery__like-wrapper">
+                <span class="gallery__like--text">Нравится:</span><span class="gallery__like--qty">356</span>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__photo-wrapper">
+                <img class="gallery__photo-mobile" width="280" height="180" alt="Фото пользователя">
+              </picture>
+              <span class="gallery__author-name">Антон </span>
+              <time class="gallery__time">(12 часов назад)</time>
+              <p class="gallery__comment">Соседи будут рады!</p>
+              <div class="gallery__like-wrapper">
+                <span class="gallery__like--text">Нравится:</span><span class="gallery__like--qty">356</span>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__photo-wrapper">
+                <img class="gallery__photo-mobile" width="280" height="180" alt="Фото пользователя">
+              </picture>
+              <span class="gallery__author-name">Борис</span>
+              <time class="gallery__time">(20 часов назад)</time>
+              <p class="gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="gallery__like-wrapper">
+                <span class="gallery__like--text">Нравится:</span><span class="gallery__like--qty">215</span>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__photo-wrapper">
+                <img class="gallery__photo-mobile" width="280" height="180" alt="Фото пользователя">
+              </picture>
+              <span class="gallery__author-name">Сергей</span>
+              <time class="gallery__time">(25 часов назад)</time>
+              <p class="gallery__comment">Самая кубанская в мире!</p>
+              <div class="gallery__like-wrapper">
+                <span class="gallery__like--text">Нравится:</span><span class="gallery__like--qty">4</span>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__photo-wrapper">
+                <img class="gallery__photo-mobile" width="280" height="180" alt="Фото пользователя">
+              </picture>
+              <span class="gallery__author-name">Максим</span>
+              <time class="gallery__time">(40 часов назад)</time>
+              <p class="gallery__comment">Где снег-то?</p>
+              <div class="gallery__like-wrapper">
+                <span class="gallery__like--text">Нравится:</span><span class="gallery__like--qty">150</span>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__photo-wrapper">
+                <img class="gallery__photo-mobile" width="280" height="180" alt="Фото пользователя">
+              </picture>
+              <span class="gallery__author-name">Надежда</span>
+              <time class="gallery__time">(45 часов назад)</time>
+              <p class="gallery__comment">Всем GM и взаимные лайки!</p>
+              <div class="gallery__like-wrapper">
+                <span class="gallery__like--text">Нравится:</span><span class="gallery__like--qty">2560</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="photo-loading">
+        <h2 class="visually-hidden">Загрузите фото</h2>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="#" width="147" height="40">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Логотип HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>
