@@ -8,22 +8,22 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo ">
-        <img class="page-header__logo-image" src="" width="75" height="22" alt="Логотип Пинк">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/75" width="75" height="22" alt="Логотип Пинк">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list_item site-list__item--active">
+            <li class="site-list__item site-list__item--active">
               <a href="#">Главная</a>
             </li>
-            <li class="site-list_item">
+            <li class="site-list__item">
               <a href="photo.html">Фотографии</a>
             </li>
-            <li class="site-list_item">
+            <li class="site-list__item">
               <a href="form.html">Конкурс</a>
             </li>
-            <li class="site-list_item">
+            <li class="site-list__item">
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
@@ -90,7 +90,7 @@
       <section class="rewiew">
         <div class="rewiew__wrapper slider">
           <h2 class="visually-hidden">Отзывы пользователей</h2>
-          <ul class="rewiew__list slide__list">
+          <ul class="rewiew__list slider__list">
             <li class="rewiew__item slider__item">
               <h3 class="rewiew__title">Николай Петров</h3>
               <p class="rewiew__discription">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -116,76 +116,86 @@
         <div class="price__wrapper">
           <h2>Стоимость тарифов</h2>
           <table class="price__list">
-            <thead class="price__list--head">
-              <tr>
-                <th class="price__rate visually-hidden">
+            <thead>
+              <tr class="price__header">
+                <th class="price__header-item">
+                  <span>Тарифы:</span>
                 </th>
-                <th class="price__rate">
-                  <span>База</span>
-                  <p>1,99 USD</p>
+                <th class="price__header-item">
+                  <span class="price__title">База</span>
                 </th>
-                <th class="price__rate price__rate--hit">
-                  <span>Стандарт</span>
-                  <p>3,99 USD</p>
+                <th class="price__header-item price__header-item--hit">
+                  <span class="price__title">Стандарт</span>
                 </th>
-                <th class="price__rate">
-                  <span>Анлим</span>
-                  <p>9,99 USD</p>
+                <th class="price__header-item">
+                  <span class="price__title">Анлим</span>
+                </th>
+              </tr>
+              <tr class="price__header">
+                <th class="price__header-item">
+                  <span class="price__value visually-hidden">Стоимость:</span>
+                </th>
+                <th class="price__header-item">
+                  <span class="price__value">1,99 USD</span>
+                </th>
+                <th class="price__header-item">
+                  <span class="price__value">3,99 USD</span>
+                </th>
+                <th class="price__header-item">
+                  <span class="price__value">9,99 USD</span>
                 </th>
               </tr>
             </thead>
-            <tbody class="price__list--body">
-              <tr>
-                <th class="price__row price__row--discription">
-                  <p>Розовый фильтр</p>
+            <tbody>
+              <tr class="price__body">
+                <th class="price__body-item">
+                  <span class="price__description">Розовый фильтр</span>
                 </th>
-                <th class="price__row price__row--yes">
-                  <span class="visually-hidden">Да</span>
+                <th class="price__body-item">
+                  <span class="price__value price__value--yes">Да</span>
                 </th>
-                <th class="price__row price__row--yes">
-                  <span class="visually-hidden">Да</span>
+                <th class="price__body-item">
+                  <span class="price__value price__value--yes">Да</span>
                 </th>
-                <th class="price__row price__row--yes">
-                  <span class="visually-hidden">Да</span>
+                <th class="price__body-item">
+                  <span class="price__value price__value--yes">Да</span>
+                </th>
+              </tr>
+              <tr class="price__body">
+                <th class="price__body-item">
+                  <span class="price__description">Смайлики</span>
+                </th>
+                <th class="price__body-item">
+                  <span class="price__value price__value--no">Нет</span>
+                </th>
+                <th class="price__body-item">
+                    <span class="price__value price__value--yes">Да</span>
+                </th>
+                <th class="price__body-item">
+                  <span class="price__value price__value--yes">Да</span>
                 </th>
               </tr>
               <tr>
-                <th class="price__row price__row--discription">
-                  <p>Смайлики</p>
+                <th class="price__body-item">
+                  <span class="price__description">Комментарии</span>
                 </th>
-                <th class="price__row price__row--yes">
-                  <span class="visually-hidden">Да</span>
+                <th class="price__body-item">
+                  <span class="price__value price__value--no">Нет</span>
                 </th>
-                <th class="price__row price__row--yes">
-                  <span class="visually-hidden">Да</span>
+                <th class="price__body-item">
+                  <span class="price__value price__value--no">Нет</span>
                 </th>
-                <th class="price__row price__row--no">
-                  <span class="visually-hidden">Нет</span>
-                </th>
-              </tr>
-              <tr>
-                <th class="price__row price__row--discription">
-                  <p>Комметарий</p>
-                </th>
-                <th class="price__row price__row--no">
-                  <span class="visually-hidden">Нет</span>
-                </th>
-                <th class="price__row price__row--no">
-                  <span class="visually-hidden">Нет</span>
-                </th>
-                <th class="price__row price__row--yes">
-                  <span class="visually-hidden">Да</span>
+                <th class="price__body-item">
+                  <span class="price__value price__value--yes">Да</span>
                 </th>
               </tr>
             </tbody>
           </table>
-          <div class="price__slider__wrapper">
-            <p class="price__toggles slider__toggles">
-              <button class="slider__toggles" type="button">1</button>
-              <button class="slider__toggles slider__toggles--active" type="button">2</button>
-              <button class="slider__toggles" type="button">3</button>
-            </p>
-          </div>
+          <p class="price__toggles slider__toggles">
+            <button class="slider__toggles" type="button">1</button>
+            <button class="slider__toggles slider__toggles--active" type="button">2</button>
+            <button class="slider__toggles" type="button">3</button>
+          </p>
         </div>
       </section>
 
@@ -211,7 +221,7 @@
           </ul>
         </div>
       </div>
-      <div class="page-footer__map map">
+      <div class="page-footer__map">
       </div>
     </footer>
 
