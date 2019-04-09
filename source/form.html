@@ -40,8 +40,8 @@
           <h2 class="slogan__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
           <p class="slogan__desription">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         </header>
-        <div class="contest-feedback__form">
-          <form class="feedback-form" method="POST" action="http://echo.htmlacademy.ru">
+        <div class="contest-feedback__form feedback-form">
+          <form class="feedback-form__form" method="POST" action="http://echo.htmlacademy.ru">
             <fieldset class="feedback-form__username">
               <legend class="visually-hidden">Наименование Пользователя</legend>
               <ul class="feedback-form__username-list">
@@ -126,10 +126,12 @@
               <legend class="feedback-form__title">Опишите свои эмоции</legend>
               <textarea class="feedback-form__textaria" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
+
+            <button class="feedback-form__button" type="submit">Отправить форму</button>
+            <span class="feedback-form__required-field"><sup>*</sup> — обязательные поля</span>
           </form>
-          <button class="feedback-form__button" type="submit">Отправить форму</button>
-          <span class="feedback-form__required-field"><sup>*</sup> — обязательные поля</span>
         </div>
+
       </section>
     </main>
 
@@ -137,7 +139,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo logo">
           <a class="logo__link" href="index.html">
-            <img class="logo__img" src="https://via.placeholder.com/147" width="147" height="40">
+            <img class="logo__img" src="https://via.placeholder.com/147" width="147" height="40" alt="Логотип Пинк">
           </a>
         </div>
         <div class="page-footer__social social">
