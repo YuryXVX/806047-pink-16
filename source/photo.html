@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Пинк страница с фото</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/75" width="75" height="22" alt="Логотип Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Фотографии пользователей</h1>
+
+      <section class="photo-gallery">
+        <header class="photo-gallery__header slogan">
+          <p class="slogan__discription">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </header>
+        <div class="photo-gallery__list users-post">
+          <h2 class="visually-hidden">Галарея фотографий</h2>
+          <ul class="users-post__list">
+            <li class="users-post__item">
+              <picture class="users-post__photo-wrapper users-post__photo-wrapper--panorama">
+                <img class="users-post__photo-mobile" src="https://via.placeholder.com/320" width="320" height="137" alt="Фото пользователя">
+              </picture>
+              <span class="users-post__author-name">Анна</span>
+              <span class="users-post__time">(5 минут назад)</span>
+              <p class="users-post__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="users-post__like-wrapper">
+                <span class="users-post__like-text">Нравится:</span><span class="users-post__like-qty">215</span>
+              </div>
+            </li>
+            <li class="users-post__item">
+              <picture class="users-post__photo-wrapper">
+                <img class="users-post__photo-mobile" src="https://via.placeholder.com/280" width="280" height="180" alt="Фото пользователя">
+              </picture>
+              <span class="users-post__author-name">Левон</span>
+              <span class="users-post__time">(5 минут назад)</span>
+              <p class="users-post__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="users-post__like-wrapper">
+                <span class="users-post__like-text">Нравится:</span><span class="users-post__like-qty">356</span>
+              </div>
+            </li>
+            <li class="users-post__item">
+              <picture class="users-post__photo-wrapper">
+                <img class="users-post__photo-mobile" src="https://via.placeholder.com/280" width="280" height="180" alt="Фото пользователя">
+              </picture>
+              <span class="users-post__author-name">Антон </span>
+              <span class="users-post__time">(12 часов назад)</span>
+              <p class="users-post__comment">Соседи будут рады!</p>
+              <div class="users-post__like-wrapper">
+                <span class="users-post__like-text">Нравится:</span><span class="users-post__like-qty">356</span>
+              </div>
+            </li>
+            <li class="users-post__item">
+              <picture class="users-post__photo-wrapper">
+                <img class="users-post__photo-mobile" src="https://via.placeholder.com/280" width="280" height="180" alt="Фото пользователя">
+              </picture>
+              <span class="users-post__author-name">Борис</span>
+              <span class="users-post__time">(20 часов назад)</span>
+              <p class="users-post__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="users-post__like-wrapper">
+                <span class="users-post__like-text">Нравится:</span><span class="users-post__like-qty">215</span>
+              </div>
+            </li>
+            <li class="users-post__item">
+              <picture class="users-post__photo-wrapper">
+                <img class="users-post__photo-mobile" src="https://via.placeholder.com/280" width="280" height="180" alt="Фото пользователя">
+              </picture>
+              <span class="users-post__author-name">Сергей</span>
+              <span class="users-post__time">(25 часов назад)</span>
+              <p class="users-post__comment">Самая кубанская в мире!</p>
+              <div class="users-post__like-wrapper">
+                <span class="users-post__like-text">Нравится:</span><span class="users-post__like-qty">4</span>
+              </div>
+            </li>
+            <li class="users-post__item">
+              <picture class="users-post__photo-wrapper">
+                <img class="users-post__photo-mobile" src="https://via.placeholder.com/280" width="280" height="180" alt="Фото пользователя">
+              </picture>
+              <span class="users-post__author-name">Максим</span>
+              <span class="users-post__time">(40 часов назад)</span>
+              <p class="users-post__comment">Где снег-то?</p>
+              <div class="users-post__like-wrapper">
+                <span class="users-post__like-text">Нравится:</span><span class="users-post__like-qty">150</span>
+              </div>
+            </li>
+            <li class="users-post__item">
+              <picture class="users-post__photo-wrapper">
+                <img class="users-post__photo-mobile" src="https://via.placeholder.com/280" width="280" height="180" alt="Фото пользователя">
+              </picture>
+              <span class="users-post__author-name">Надежда</span>
+              <span class="users-post__time">(45 часов назад)</span>
+              <p class="users-post__comment">Всем GM и взаимные лайки!</p>
+              <div class="users-post__like-wrapper">
+                <span class="users-post__like-text">Нравится:</span><span class="users-post__like-qty">2560</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="photo-loading">
+
+        <h2 class="visually-hidden">Загрузите фото</h2>
+
+        <header class="photo-loading__discription slogan">
+          <p class="slogan__discription">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </header>
+
+        <div class="photo-loading__form photo-filter">
+          <form class="photo-filter__form" method="POST" action="http://echo.htmlacademy.ru">
+            <picture class="photo-filter__wrapper">
+              <img class="photo-filter__user-photo" src="https://via.placeholder.com/280" width="280" height="374" alt="Загруженное фото">
+            </picture>
+            <ul class="photo-filter__options">
+              <li class="photo-filter__options-item">
+                <svg class="photo-filter__icon photo-filter__icon--crop"></svg>
+              </li>
+              <li class="photo-filter__options-item">
+                <svg class="photo-filter__icon photo-filter__icon--fill"></svg>
+              </li>
+              <li class="photo-filter__options-item">
+                <svg class="photo-filter__icon photo-filter__icon--contrast"></svg>
+              </li>
+            </ul>
+            <div class="photo-filter__controls">
+              <div class="photo-filter__scale">
+                <div class="photo-filter__bar"></div>
+              </div>
+              <div class="photo-filter__min"></div>
+              <div class="photo-filter__max"></div>
+            </div>
+            <div class="photo-filter__buttons">
+              <button class="photo-filter__button-load button" type="submit">Запостить</button>
+              <button class="photo-filter__button-cancel button" type="reset">Отмена</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="https://via.placeholder.com/147" width="147" height="40" alt="Логотип Пинк">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Логотип HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

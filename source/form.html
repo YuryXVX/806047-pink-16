@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Пинк страница с формой</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/75" width="75" height="22" alt="Логотип Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="site-list_item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Страница с формой регистрации</h1>
+
+      <section class="contest-feedback">
+        <header class="contest-feedback__header slogan">
+          <h2 class="slogan__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+          <p class="slogan__desription">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        </header>
+        <div class="contest-feedback__form feedback-form">
+          <form class="feedback-form__form" method="POST" action="http://echo.htmlacademy.ru">
+            <fieldset class="feedback-form__username">
+              <legend class="visually-hidden">Наименование Пользователя</legend>
+              <ul class="feedback-form__username-list">
+                <li class="feedback-form__username-item">
+                  <label class="feedback-form__label feedback-form__label--user-data" for="surname">Фамилия:</label>
+                  <input class="feedback-form__text-field" id="surname" name="surname" type="text" placeholder="Укажите фамилию *" required>
+                </li>
+                <li class="feedback-form__username-item">
+                  <label class="feedback-form__label feedback-form__label--user-data" for="name">Имя:</label>
+                  <input class="feedback-form__text-field" id="name" name="name" type="text" placeholder="Введите ваше имя *" required>
+                </li>
+                <li class="feedback-form__username-item">
+                  <label class="feedback-form__label feedback-form__label--user-data" for="middlename">Отчество:</label>
+                  <input class="feedback-form__text-field" id="middlename" name="middlename" type="text" placeholder="Ну и отчество тоже">
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="feedback-form__progress">
+              <legend class="feedback-form__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="feedback-form__progress-list">
+                <li class="feedback-form__progress-item">
+                  <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="selfi" checked>
+                  <label class="feedback-form__label" for="selfi">Сделал селфи с акулой</label>
+                </li>
+                <li class="feedback-form__progress-item">
+                  <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="burn" checked>
+                  <label class="feedback-form__label" for="burn">Обгорел на пляже</label>
+                </li>
+                <li class="feedback-form__progress-item">
+                  <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="see" checked>
+                  <label class="feedback-form__label" for="see">Видел Чака Норриса</label>
+                </li>
+                <li class="feedback-form__progress-item">
+                  <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="souvenir">
+                  <label class="feedback-form__label" for="souvenir">Накупил сувениров</label>
+                </li>
+                <li class="feedback-form__progress-item">
+                  <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="tower" checked>
+                  <label class="feedback-form__label" for="tower">Удержал башню</label>
+                </li>
+                <li class="feedback-form__progress-item">
+                  <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="hotel">
+                  <label class="feedback-form__label" for="hotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="feedback-form__contasts">
+              <legend class="visually-hidden">Контактные данные Пользователя</legend>
+              <ul class="feedback-form__contasts-list">
+                <li class="feedback-form__contasts-item">
+                  <input class="feedback-form__text-field" type="text" name="tel" id="tel" placeholder="Номер, пожалуйста" required>
+                  <label class="feedback-form__label feedback-form__label--user-data" for="tel">Номер телефона</label>
+                </li>
+                <li class="feedback-form__contasts-item">
+                  <input class="feedback-form__text-field" id="email" type="text" placeholder="Введите почту *" required>
+                  <label class="feedback-form__label feedback-form__label--user-data" for="email">Адрес почты</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="feedback-form__app">
+              <legend class="feedback-form__title">С каким приложением путешествовали?</legend>
+              <ul class="feedback-form__app-list">
+                <li class="feedback-form__app-item">
+                  <input class="visually-hidden feedback-form__radio" type="radio" name="ios" id="ios" checked>
+                  <label class="feedback-form__label" for="ios">Pink для iOS</label>
+                </li>
+                <li>
+                  <input class="visually-hidden feedback-form__radio" type="radio" name="android" id="android">
+                  <label class="feedback-form__label" for="android">Pink на Android</label>
+                </li>
+                <li>
+                  <input class="visually-hidden feedback-form__radio" type="radio" name="windows" id="windows">
+                  <label class="feedback-form__label" for="windows">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="feedback-form__textaria">
+              <legend class="feedback-form__title">Опишите свои эмоции</legend>
+              <textarea class="feedback-form__textaria" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+
+            <button class="feedback-form__button" type="submit">Отправить форму</button>
+            <span class="feedback-form__required-field"><sup>*</sup> — обязательные поля</span>
+          </form>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="https://via.placeholder.com/147" width="147" height="40" alt="Логотип Пинк">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Логотип HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
