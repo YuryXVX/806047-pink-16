@@ -1,0 +1,41 @@
+
+.main-nav {
+  width: 100%;
+}
+
+.site-list {
+  width: 320px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  background-color: $bg-color;
+}
+
+.site-list__item {
+  box-sizing: border-box;
+  padding: 26px 85px;
+  box-shadow: 0px 1px 0 0 #000000;
+  text-align: center;
+}
+
+.site-list__link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+  line-height: 1.78;
+}
+
+.site-list__link:hover,
+.site-list__link:focus {
+  color: $pink;
+  &:active {
+    color: rgba($color: $pink, $alpha: 0.3);
+  }
+}
+
+.site-list__link--active {
+  color: $pink;
+}

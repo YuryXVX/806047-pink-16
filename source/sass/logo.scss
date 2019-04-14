@@ -1,0 +1,9 @@
+
+.logo__mobile:hover path,
+.logo__mobile:focus path{
+  fill: $pink;
+}
+
+.logo__mobile:active path {
+  fill: rgba($pink, $alpha: 0.3);
+}
