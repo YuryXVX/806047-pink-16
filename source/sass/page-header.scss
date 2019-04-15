@@ -1,8 +1,10 @@
-@import "variables.scss";
-
 .page-header {
   margin: 0 auto;
   background-color: $bg-color;
+}
+
+.page-header__logo {
+  display: block;
 }
 
 .page-header__logo-image:hover path,

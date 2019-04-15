@@ -16,8 +16,7 @@
   width: 320px;
   height: 402px;
   margin: 0 auto;
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom,
-              url("../img/bg-back-mobile@1x.jpg");
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom, url("../img/bg-back-mobile@1x.jpg");
   background-color: $bg-color;
 }
 
@@ -28,13 +27,15 @@
   color: $white;
   border: 3px solid $white;
   margin-bottom: 34px;
+
   &:hover {
     background-color: $white;
     color: $pink;
   }
+
   &:active {
     color: rgba($color: $pink, $alpha: 0.3);
-}
+  }
 }
 
 .download-app__list {
