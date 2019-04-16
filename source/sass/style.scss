@@ -1,1 +1,15 @@
-@import "variables.scss", "general.scss", "page-header.scss", "site-list.scss", "download-app.scss", "advantages.scss", "buttons.scss", "slogan.scss", "user-post.scss", "social.scss", "page-footer.scss", "logo.scss", "copyright.scss";
+@import "variables.scss";
+@import "scaffolding.scss";
+@import "../sass/blocks/page-header.scss";
+@import "../sass/blocks/main-nav.scss";
+@import "../sass/blocks/site-list.scss";
+@import "../sass/blocks/advantages.scss";
+@import "../sass/blocks/download-app.scss";
+@import "../sass/blocks/photo-gallery.scss";
+@import "../sass/blocks/user-post.scss";
+@import "../sass/blocks/page-footer.scss";
+@import "../sass/blocks/logo.scss";
+@import "../sass/blocks/social.scss";
+@import "../sass/blocks/copyright.scss";
+@import "../sass/blocks/buttons.scss";
+@import "../sass/blocks/slogan.scss";

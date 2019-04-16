@@ -1,9 +1,6 @@
 
 .slogan {
   box-sizing: border-box;
-  width: 320px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .slogan__title {
@@ -20,18 +17,13 @@
 
 .slogan__discription {
   margin: 0;
-  padding: 56px 40px;
   font-size: 14px;
   line-height: 2.14;
   color: $black;
 }
 
-.slogan__discription--form {
-  padding: 55px 25px;
-}
-
 .slogan__bg-image {
   height: 174px;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center center/ 320px 462px;
+  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat center center;
   padding-top: 35px;
 }

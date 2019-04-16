@@ -1,13 +1,13 @@
-.advantages {
-  margin: 0 auto;
-  text-align: center;
-}
 
 .advantages__wrapper {
   padding-top: 130px;
   text-align: center;
-  background: url("../img/bg-triangle-white.svg") no-repeat;
+  background: url("../../img/bg-triangle-white.svg") no-repeat;
   background-color: $white-three;
+}
+
+.advantages__header {
+  text-align: center;
 }
 
 .advantages__list {
@@ -25,7 +25,7 @@
 
 .advantages__item--mobile-img {
   padding-bottom: 322px;
-  background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 148px/ 157px 320px;
+  background: url("../../img/iphone-screen-mobile@1x.png") no-repeat center 148px/ 157px 320px;
 }
 
 .advantages__title {
