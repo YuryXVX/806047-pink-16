@@ -1,0 +1,15 @@
+
+.copyright__text {
+  color: $black;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.copyright__link-logo:hover path,
+.copyright__link-logo:focus path {
+  fill: $black;
+}
+
+.copyright__link-logo:active path {
+  fill: rgba($black, $alpha: 0.3);
+}

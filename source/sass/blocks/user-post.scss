@@ -1,0 +1,49 @@
+
+.users-post__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.users-post__item {
+  background-color: $white-three;
+  margin-bottom: 20px;
+}
+
+.users-post__item:last-child {
+  margin-bottom: 0;
+}
+
+.users-post__author-name {
+  color: $black;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.users-post__time {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.users-post__comment {
+  color: $black;
+  font-size: 14px;
+  line-height: 1.71;
+  margin: 0;
+}
+
+.users-post__like-text {
+  font-size: 12px;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.users-post__like-qty {
+  font-size: 12px;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.users-post__photo-mobile {
+  display: block;
+}
