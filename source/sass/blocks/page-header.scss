@@ -1,17 +1,46 @@
 .page-header {
-  margin: 0 auto;
+  min-height: 402px;
+  background-color: $bg-color;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 462px auto;
+}
+
+.page-header__app {
   background-color: $bg-color;
 }
 
-.page-header__logo {
-  display: block;
+@media (min-width: $tablet-width) {
+  .page-header {
+    min-height: 730px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-size: 1200px auto;
+    background-position: 50% 0;
+  }
+
+  .page-header__app {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .page-header--other {
+    min-height: 440px;
+  }
 }
 
-.page-header__logo-image:hover path,
-.page-header__logo-image:focus path {
-  fill: $pink;
-}
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-height: 843px;
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-size: auto auto;
+  }
 
-.page-header__logo-image:active path {
-  fill: rgba($color: $white, $alpha: 0.3);
+  .page-header__app {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .page-header--other {
+    min-height: 394px;
+  }
 }

@@ -1,13 +1,24 @@
 
 .users-post__list {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .users-post__item {
+  width: 280px;
   background-color: $white-three;
-  margin-bottom: 20px;
+  margin: 20px;
+}
+
+.users-post__item--panorama {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .users-post__item:last-child {
@@ -46,4 +57,24 @@
 
 .users-post__photo-mobile {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .users-post__item {
+    width: 300px;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .users-post__item:nth-child(2n) {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .users-post__item--panorama {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

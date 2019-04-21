@@ -1,5 +1,6 @@
 
 .site-list {
+  display: block;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -34,4 +35,29 @@
 
 .site-list__link--active {
   color: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    width: 640px;
+    justify-content: space-between;
+  }
+
+  .site-list__item {
+    padding: 35px 10px 48px 10px;
+    box-shadow: none;
+  }
+
+  .site-list__link {
+    text-transform: none;
+    font-weight: 300;
+    line-height: 1;
+  }
 }
