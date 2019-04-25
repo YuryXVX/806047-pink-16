@@ -1,0 +1,133 @@
+
+.photo-filter__form {
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-filter__wrapper {
+  margin-bottom: 42px;
+}
+
+.photo-filter__user-photo {
+  display: block;
+  width: 280px;
+  height: 374px;
+}
+
+.photo-filter__options {
+  width: 240px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.photo-filter__controls {
+  width: 240px;
+  background-color: $black;
+  position: relative;
+  margin-bottom: 73px;
+}
+
+.photo-filter__scale {
+  height: 2px;
+}
+
+.photo-filter__toggle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $white;
+  border: solid 2px #d22856;
+  cursor: pointer;
+
+  &--max {
+    top: -7px;
+    left: 80%;
+  }
+}
+
+.photo-filter__controls--fill,
+.photo-filter__controls--contrast {
+  display: none;
+}
+
+.photo-filter__button {
+  width: 280px;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 14px 88px 15px 87px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: $pink;
+  line-height: 1;
+  border: solid 3px $pink;
+
+  &--disabled {
+    color: rgba(40, 54, 69, 0.1);
+    border-color: rgba($black, $alpha: 0.1);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo-filter__form {
+    width: 660px;
+    padding: 57px 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .photo-filter__wrapper {
+    display: block;
+    overflow: visible;
+    width: 300px;
+    height: 200px;
+    margin-right: 50px;
+    margin-bottom: 45px;
+  }
+
+  .photo-filter__controls--fill,
+  .photo-filter__controls--contrast {
+    display: block;
+  }
+
+  .photo-filter__options {
+    align-self: flex-start;
+    flex-direction: column;
+    width: 22px;
+    margin-right: auto;
+  }
+
+  .photo-filter__options-item {
+    outline: 2px solid red;
+  }
+
+  .photo-filter__controls-wrapper {
+    align-self: flex-start;
+  }
+
+  .photo-filter__controls {
+    width: 202px;
+    margin-bottom: 68px;
+  }
+
+  .photo-filter__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+
+  .photo-filter__button {
+    width: 260px;
+    padding: 14px 88px 15px 78px;
+  }
+}

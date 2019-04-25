@@ -1,9 +1,14 @@
 
 .photo-gallery {
-  width: 320px;
   margin: 0 auto;
 }
 
 .photo-gallery__header {
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-gallery__header {
+    padding: 100px 112px 80px 112px;
+  }
 }

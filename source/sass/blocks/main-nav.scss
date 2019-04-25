@@ -1,5 +1,63 @@
 
 .main-nav {
+  background-color: $bg-color;
+}
+
+.main-nav__wrapper {
   width: 320px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.main-nav__toggle {
+  margin-left: auto;
+}
+
+.main-nav__logo {
+  display: block;
+  width: 75px;
+}
+
+.main-nav__logo-image:hover path,
+.main-nav__logo-image:focus path {
+  fill: $pink;
+}
+
+.main-nav__logo-image:active path {
+  fill: rgba($color: $white, $alpha: 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    margin: 0 auto;
+    width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .main-nav__logo {
+    width: 147px;
+    margin: 27px 0 42px 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 960px;
+    flex-direction: row;
+    align-items: baseline;
+    background-color: rgba($bg-color, $alpha: 0.5);
+  }
+
+  .main-nav__logo {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
