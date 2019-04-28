@@ -11,7 +11,7 @@
 
   <body>
     <header class="page-header page-header--other">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
               <svg class="main-nav__logo-image" width="75" height="22" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -23,13 +23,13 @@
                 </g>
             </svg>
           </a>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link site-list__link--active" href="form.html">Конкурс</a>
@@ -43,12 +43,15 @@
     </header>
 
     <main class="page-main">
-
       <h1 class="visually-hidden">Страница с формой регистрации</h1>
+
+      <div class="page-main__bg-image--other slogan">
+        <h2 class="slogan__title slogan__title--photo">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      </div>
 
       <section class="contest-feedback">
         <header class="contest-feedback__header slogan">
-          <h1 class="slogan__title slogan__title--photo">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <h2 class="visually-hidden">Форма обратной связи</h2>
           <p class="slogan__discription slogan__discription--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         </header>
         <div class="contest-feedback__form feedback-form">
@@ -190,6 +193,22 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector(".main-nav");
+      var navToggle = document.querySelector(".main-nav__toggle");
+
+      navMain.classList.remove("main-nav--nojs");
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains("main-nav--closed")) {
+          navMain.classList.remove("main-nav--closed");
+          navMain.classList.add("main-nav--opened");
+        } else {
+          navMain.classList.add("main-nav--closed");
+          navMain.classList.remove("main-nav--opened");
+        }
+      });
+    </script>
 
   </body>
 </html>

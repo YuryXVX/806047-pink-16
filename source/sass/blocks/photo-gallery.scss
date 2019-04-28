@@ -5,10 +5,11 @@
 
 .photo-gallery__header {
   text-align: center;
+  padding: 46px 43px 39px;
 }
 
 @media (min-width: $tablet-width) {
   .photo-gallery__header {
-    padding: 100px 112px 80px 112px;
+    padding: 92px 112px 64px 112px;
   }
 }
