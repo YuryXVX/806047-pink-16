@@ -42,14 +42,9 @@
       </nav>
     </header>
 
-    <main class="page-main">
-      <h1 class="visually-hidden">Страница с формой регистрации</h1>
-
-      <div class="page-main__bg-image--other slogan">
-        <h2 class="slogan__title slogan__title--photo">Конкурс на самое безбашенное путешествие с Пинк</h2>
-      </div>
-
+    <main class="page-main page-main--other">
       <section class="contest-feedback">
+        <h2 class="contest-feedback__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
         <header class="contest-feedback__header slogan">
           <h2 class="visually-hidden">Форма обратной связи</h2>
           <p class="slogan__discription slogan__discription--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
@@ -61,7 +56,7 @@
               <ul class="feedback-form__username-list">
                 <li class="feedback-form__username-item">
                   <label class="feedback-form__label feedback-form__label--user-data" for="surname">Фамилия:</label>
-                  <input class="feedback-form__text-field" id="surname" name="surname" type="text" placeholder="Укажите фамилию *" required>
+                  <input class="feedback-form__text-field" id="surname" name="surname" type="text" placeholder="Укажите фамилию*" required>
                 </li>
                 <li class="feedback-form__username-item">
                   <label class="feedback-form__label feedback-form__label--user-data" for="name">Имя:</label>
@@ -74,72 +69,77 @@
               </ul>
             </fieldset>
 
-            <fieldset class="feedback-form__progress">
-              <legend class="feedback-form__title">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="feedback-form__progress-list">
-                <li class="feedback-form__progress-item">
-                  <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="selfi" checked>
-                  <label class="feedback-form__label" for="selfi">Сделал селфи с акулой</label>
-                </li>
-                <li class="feedback-form__progress-item">
-                  <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="burn" checked>
-                  <label class="feedback-form__label" for="burn">Обгорел на пляже</label>
-                </li>
-                <li class="feedback-form__progress-item">
-                  <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="see" checked>
-                  <label class="feedback-form__label" for="see">Видел Чака Норриса</label>
-                </li>
-                <li class="feedback-form__progress-item">
-                  <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="souvenir">
-                  <label class="feedback-form__label" for="souvenir">Накупил сувениров</label>
-                </li>
-                <li class="feedback-form__progress-item">
-                  <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="tower" checked>
-                  <label class="feedback-form__label" for="tower">Удержал башню</label>
-                </li>
-                <li class="feedback-form__progress-item">
-                  <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="hotel">
-                  <label class="feedback-form__label" for="hotel">Разгромил отель</label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="feedback-form__progress-wrapper">
+              <fieldset class="feedback-form__progress">
+                <legend class="feedback-form__title">Ваши безбашенные достижения в путешествии</legend>
+                <ul class="feedback-form__progress-list">
+                  <li class="feedback-form__progress-item">
+                    <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="selfi" checked>
+                    <label class="feedback-form__label feedback-form__label--progress" for="selfi">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="feedback-form__progress-item">
+                    <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="burn" checked>
+                    <label class="feedback-form__label feedback-form__label--progress" for="burn">Обгорел на пляже</label>
+                  </li>
+                  <li class="feedback-form__progress-item">
+                    <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="see" checked>
+                    <label class="feedback-form__label feedback-form__label--progress" for="see">Видел Чака Норриса</label>
+                  </li>
+                  <li class="feedback-form__progress-item">
+                    <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="souvenir">
+                    <label class="feedback-form__label feedback-form__label--progress" for="souvenir">Накупил сувениров</label>
+                  </li>
+                  <li class="feedback-form__progress-item">
+                    <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="tower" checked>
+                    <label class="feedback-form__label feedback-form__label--progress" for="tower">Удержал башню</label>
+                  </li>
+                  <li class="feedback-form__progress-item">
+                    <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="hotel">
+                    <label class="feedback-form__label feedback-form__label--progress" for="hotel">Разгромил отель</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
 
             <fieldset class="feedback-form__contasts">
               <legend class="visually-hidden">Контактные данные Пользователя</legend>
               <ul class="feedback-form__contasts-list">
                 <li class="feedback-form__contasts-item">
-                  <input class="feedback-form__text-field" type="text" name="tel" id="tel" placeholder="Номер, пожалуйста" required>
                   <label class="feedback-form__label feedback-form__label--user-data" for="tel">Номер телефона</label>
+                  <input class="feedback-form__text-field" type="text" name="tel" id="tel" placeholder="Номер, пожалуйста" required>
                 </li>
                 <li class="feedback-form__contasts-item">
-                  <input class="feedback-form__text-field" id="email" type="text" placeholder="Введите почту *" required>
                   <label class="feedback-form__label feedback-form__label--user-data" for="email">Адрес почты</label>
+                  <input class="feedback-form__text-field" id="email" type="text" placeholder="Введите почту *" required>
                 </li>
               </ul>
             </fieldset>
+            <div class="feedback-form__app-wrapper">
+              <fieldset class="feedback-form__app">
+                <legend class="feedback-form__title">С каким приложением путешествовали?</legend>
+                <ul class="feedback-form__app-list">
+                  <li class="feedback-form__app-item">
+                    <input class="visually-hidden feedback-form__radio" type="radio" name="ios" id="ios" checked>
+                    <label class="feedback-form__label feedback-form__label--progress" for="ios">Pink для iOS</label>
+                  </li>
+                  <li class="feedback-form__app-item">
+                    <input class="visually-hidden feedback-form__radio" type="radio" name="android" id="android">
+                    <label class="feedback-form__label feedback-form__label--progress" for="android">Pink на Android</label>
+                  </li>
+                  <li class="feedback-form__app-item">
+                    <input class="visually-hidden feedback-form__radio" type="radio" name="windows" id="windows">
+                    <label class="feedback-form__label feedback-form__label--progress" for="windows">Windows Phone</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
 
-            <fieldset class="feedback-form__app">
-              <legend class="feedback-form__title">С каким приложением путешествовали?</legend>
-              <ul class="feedback-form__app-list">
-                <li class="feedback-form__app-item">
-                  <input class="visually-hidden feedback-form__radio" type="radio" name="ios" id="ios" checked>
-                  <label class="feedback-form__label" for="ios">Pink для iOS</label>
-                </li>
-                <li>
-                  <input class="visually-hidden feedback-form__radio" type="radio" name="android" id="android">
-                  <label class="feedback-form__label" for="android">Pink на Android</label>
-                </li>
-                <li>
-                  <input class="visually-hidden feedback-form__radio" type="radio" name="windows" id="windows">
-                  <label class="feedback-form__label" for="windows">Windows Phone</label>
-                </li>
-              </ul>
-            </fieldset>
-
-            <fieldset class="feedback-form__textaria">
-              <legend class="feedback-form__title">Опишите свои эмоции</legend>
-              <textarea class="feedback-form__textaria" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </fieldset>
+            <div class="feedack-form__textaria-wrapper">
+              <fieldset class="feedback-form__textaria">
+                <legend class="feedback-form__title feedback-form__title--textaria">Опишите свои эмоции</legend>
+                <textarea class="feedback-form__textfield" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </fieldset>
+            </div>
 
             <button class="feedback-form__button" type="submit">Отправить форму</button>
             <span class="feedback-form__required-field"><sup>*</sup> — обязательные поля</span>
