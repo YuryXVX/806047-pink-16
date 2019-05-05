@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% 462px;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: $bg-color;
 }
 
@@ -14,7 +14,7 @@
   top: -285px;
   left: 0;
   background: transparent;
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   width: 320px;
   height: 314px;
@@ -82,17 +82,17 @@
 }
 
 .download-app__link--aple {
-  background-image: url("../../img/logo-apple.svg");
+  background-image: url("../img/logo-apple.svg");
   background-size: 47px 56px;
 }
 
 .download-app__link--android {
-  background-image: url("../../img/logo-android.svg");
+  background-image: url("../img/logo-android.svg");
   background-size: 43px 47px;
 }
 
 .download-app__link--windows {
-  background-image: url("../../img/logo-microsoft.svg");
+  background-image: url("../img/logo-microsoft.svg");
   background-size: 44px 41px;
 }
 
@@ -108,7 +108,10 @@
 @media (min-width: $tablet-width) {
   .download-app {
     padding-top: 250px;
-    background: url("../../img/iphone-hand-tablet@1x.png") no-repeat -17px bottom, url("../../img/bg-back-tablet@1x.jpg") no-repeat 50% 0/ 1200px auto;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat no-repeat;
+    background-position: -17px bottom, 50% 0;
+    background-size: 660px 545px, 1200px auto;
   }
 
   .download-app__wrapper {
@@ -149,8 +152,11 @@
 
 @media (min-width: $desktop-width) {
   .download-app {
-    padding-top: 189px;
-    background: url("../../img/iphone-hand-desktop@1x.png") no-repeat 33px bottom, url("../../img/bg-back-desktop@1x.jpg") no-repeat center center/ 2560px 853px;
+    padding-top: 250px;
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat no-repeat;
+    background-position: 33px bottom, center center;
+    background-size: 1050px 645px, 2560px 853px;
   }
 
   .download-app__wrapper {

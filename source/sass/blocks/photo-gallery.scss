@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding-top: 101px;
   background-color: $bg-color;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% 462px;
@@ -28,7 +28,10 @@
 @media (min-width: $tablet-width) {
   .photo-gallery {
     padding-top: 191px;
-    background: url("../../img/bg-back-tablet@1x.jpg") no-repeat 50% 0/ 1200px auto;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 1200px auto;
   }
 
   .photo-gallery__title {
@@ -45,8 +48,10 @@
 @media (min-width: $desktop-width) {
   .photo-gallery {
     padding-top: 184px;
-    padding-bottom: 111px;
-    background: url("../../img/bg-back-desktop@1x.jpg") no-repeat top center/2560px 853px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 2560px 853px;
   }
 
   .photo-gallery__title {
