@@ -1,0 +1,275 @@
+
+.feedback-form__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  margin-top: -1px;
+  margin-bottom: 35px;
+}
+
+.feedback-form__username {
+  border: 0;
+  margin-bottom: 15px;
+}
+
+.feedback-form__username-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback-form__username-item {
+  margin-bottom: 20px;
+}
+
+.feedback-form__label {
+  display: block;
+  color: $pink;
+  line-height: 2.14;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  margin-left: 23px;
+}
+
+.feedback-form__text-field {
+  display: block;
+  width: 276px;
+  box-sizing: border-box;
+  border: solid 2px #e5e5e5;
+  padding: 22px 79px 18px 20px;
+}
+
+.feedback-form__text-field::placeholder {
+  color: $black;
+  line-height: 1.67;
+  font-size: 18px;
+  font-family: inherit;
+}
+
+.feedback-form__progress-wrapper {
+  text-align: center;
+  background-color: $white-three;
+  padding-top: 38px;
+}
+
+.feedback-form__progress {
+  padding-top: 15px;
+  border: 0;
+}
+
+.feedback-form__title {
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 1.29;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+.feedback-form__progress-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.feedback-form__progress-item {
+  margin-bottom: 51px;
+}
+
+.feedback-form__progress-item:last-child {
+  margin-bottom: 36px;
+}
+
+.feedback-form__label--progress {
+  text-transform: none;
+  color: $black;
+  line-height: 1.67;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 50px;
+  position: relative;
+}
+
+.feedback-form__checkbox + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -15px;
+  top: -5px;
+  width: 35px;
+  height: 35px;
+  border: solid 2px #e5e5e5;
+  background-color: $white;
+}
+
+.feedback-form__checkbox:checked + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-color: $white;
+  background-image: url("../img/icon-yes.svg");
+  background-position: center center;
+}
+
+.feedback-form__app-wrapper {
+  padding-top: 35px;
+  background-color: $white-three;
+  text-align: center;
+}
+
+.feedback-form__contasts {
+  border: none;
+  padding-top: 34px;
+  margin-bottom: 17px;
+  text-align: left;
+}
+
+.feedback-form__contasts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback-form__contasts-item {
+  margin-bottom: 21px;
+}
+
+.feedback-form__app {
+  border: none;
+  text-align: left;
+}
+
+.feedback-form__app-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback-form__app-item {
+  margin-bottom: 49px;
+}
+
+.feedback-form__radio + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 37px;
+  height: 36px;
+  border-radius: 50%;
+  border: solid 2px #e5e5e5;
+  background-color: $white;
+}
+
+.feedback-form__radio:checked + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 37px;
+  height: 36px;
+  border-radius: 50%;
+  border: solid 2px #e5e5e5;
+  box-shadow: inset $white 0 0 0 11px;
+  background-color: $pink;
+}
+
+.feedack-form__textaria-wrapper {
+  padding-top: 36px;
+  margin-bottom: 35px;
+}
+
+.feedback-form__textaria {
+  border: 0;
+}
+
+.feedback-form__title--textaria {
+  margin-bottom: 11px;
+}
+
+.feedback-form__textfield {
+  width: 276px;
+  border: solid 2px #e5e5e5;
+  resize: none;
+  padding: 15px 28px 150px 19px;
+  box-sizing: border-box;
+}
+
+.feedback-form__textfield::placeholder {
+  font: inherit;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.feedback-form__button {
+  box-sizing: border-box;
+  border: solid 2px #2aab6d;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px 46px;
+  background-color: #2aab6d;
+  margin-bottom: 37px;
+  color: $white;
+}
+
+.feedback-form__required-field {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 2.14;
+}
+
+.feedback-form__required-field sup {
+  font-size: 12px;
+  color: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-form__form {
+    justify-content: flex-start;
+  }
+
+  .feedback-form__username {
+    width: 620px;
+    padding: 0 20px;
+    order: -1;
+  }
+
+  .feedback-form__username-item {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .feedback-form__label--user-data {
+    margin-left: 0;
+    margin-right: 21px;
+    margin-top: 15px;
+  }
+
+  .feedback-form__text-field {
+    width: 100%;
+  }
+
+  .feedback-form__app-wrapper {
+    order: -1;
+    background-color: $white;
+    padding: 0;
+  }
+
+  .feedback-form__app {
+    width: 660px;
+    margin: 0 auto;
+    border: 2px solid  #e5e5e5;
+  }
+
+  .feedback-form__title {
+    text-align: center;
+  }
+}

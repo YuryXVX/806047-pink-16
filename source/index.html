@@ -11,7 +11,7 @@
 
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo">
             <svg class="main-nav__logo-image" width="75" height="22" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -23,7 +23,7 @@
               </g>
             </svg>
           </a>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--active" href="#">Главная</a>
@@ -40,50 +40,51 @@
           </ul>
         </div>
       </nav>
-      <section class="page-header__app download-app">
-        <div class="download-app__wrapper">
-          <h2 class="visually-hidden">Ссылки на приложение</h2>
-          <span class="download-app__title">Взгляните на жизнь иначе!</span>
-            <a class="download-app__button button" href="#">Скачать приложение</a>
-            <ul class="download-app__list">
-              <li class="download-app__item">
-                <a class="download-app__link download-app__link--aple" href="#">
-                  <span class="visually-hidden">Приложение для ios</span>
-                </a>
-              </li>
-              <li class="download-app__item">
-                <a class="download-app__link download-app__link--android" href="#">
-                  <span class="visually-hidden">Приложение для android</span>
-                </a>
-              </li>
-              <li class="download-app__item">
-                <a class="download-app__link download-app__link--windows" href="#">
-                  <span class="visually-hidden">Приложение для windows</span>
-                </a>
-              </li>
-            </ul>
-            <span class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
-          </div>
-        </section>
     </header>
 
     <main class="page-main">
 
       <h1 class="visually-hidden">Приложение "Пинк"</h1>
 
+      <section class="download-app">
+        <div class="download-app__wrapper">
+          <h2 class="visually-hidden">Ссылки на приложение</h2>
+          <span class="download-app__title">Взгляните на жизнь иначе!</span>
+          <a class="download-app__button button" href="#">Скачать приложение</a>
+          <ul class="download-app__list">
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--aple" href="#">
+                <span class="visually-hidden">Приложение для ios</span>
+              </a>
+            </li>
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--android" href="#">
+                <span class="visually-hidden">Приложение для android</span>
+              </a>
+            </li>
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--windows" href="#">
+                <span class="visually-hidden">Приложение для windows</span>
+              </a>
+            </li>
+          </ul>
+          <span class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
+        </div>
+      </section>
+
       <section class="advantages">
         <header class="advantages__header slogan">
           <p class="slogan__title">Устали от серости мегаполиса?</p>
-          <p class="slogan__title">Нам есть, что вам предложить!</p>
+          <p class="slogan__title">Нам есть, что вам <br> предложить!</p>
         </header>
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Преимущества приложения</h2>
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--first-img">
               <h3 class="advantages__title">Поднимает настроение</h3>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--second-img">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
@@ -276,6 +277,23 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector(".main-nav");
+      var navToggle = document.querySelector(".main-nav__toggle");
+
+      navMain.classList.remove("main-nav--nojs");
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains("main-nav--closed")) {
+          navMain.classList.remove("main-nav--closed");
+          navMain.classList.add("main-nav--opened");
+        } else {
+          navMain.classList.add("main-nav--closed");
+          navMain.classList.remove("main-nav--opened");
+        }
+      });
+    </script>
 
   </body>
 

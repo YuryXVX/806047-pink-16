@@ -1,17 +1,21 @@
 
 .site-list {
-  display: block;
+  width: 100%;
+  background-color: $bg-color;
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: $bg-color;
 }
 
 .site-list__item {
   box-sizing: border-box;
-  padding: 26px 85px;
-  box-shadow: 0 1px 0 0 #000000;
+  padding: 16px 85px 15px 85px;
   text-align: center;
+  border-top: 1px solid #000000;
+}
+
+.site-list__item:last-child {
+  border-bottom: 1px solid #000000;
 }
 
 .site-list__link {
@@ -22,6 +26,7 @@
   font-weight: 700;
   color: $white;
   line-height: 1.78;
+  position: relative;
 }
 
 .site-list__link:hover,
@@ -39,25 +44,34 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-    width: $tablet-width;
+    margin-top: 19px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
+    margin: 0;
     display: flex;
     width: 640px;
     justify-content: space-between;
+    background-color: transparent;
   }
 
   .site-list__item {
     padding: 35px 10px 48px 10px;
     box-shadow: none;
+    border: none;
   }
 
   .site-list__link {
     text-transform: none;
     font-weight: 300;
     line-height: 1;
+    padding-bottom: 9px;
+  }
+
+  .site-list__link--active {
+    color: $white;
+    border-bottom: 2px solid $white;
   }
 }
