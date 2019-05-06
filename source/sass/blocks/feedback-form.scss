@@ -68,6 +68,10 @@
   color: $pink;
 }
 
+.feedback-form__title--contast {
+  display: none;
+}
+
 .feedback-form__progress-list {
   list-style: none;
   padding: 0;
@@ -207,6 +211,12 @@
   line-height: 1.67;
 }
 
+.feedback-form__button-wrapper {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
 .feedback-form__button {
   box-sizing: border-box;
   border: solid 2px #2aab6d;
@@ -233,13 +243,15 @@
 
 @media (min-width: $tablet-width) {
   .feedback-form__form {
-    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .feedback-form__username {
     width: 620px;
     padding: 0 20px;
-    order: -1;
+    order: -4;
   }
 
   .feedback-form__username-item {
@@ -255,21 +267,83 @@
 
   .feedback-form__text-field {
     width: 100%;
+    position: relative;
   }
 
   .feedback-form__app-wrapper {
-    order: -1;
     background-color: $white;
     padding: 0;
+    order: -3;
   }
 
   .feedback-form__app {
-    width: 660px;
+    box-sizing: border-box;
+    width: 616px;
     margin: 0 auto;
     border: 2px solid  #e5e5e5;
   }
 
   .feedback-form__title {
+    display: block;
     text-align: center;
+    margin: 0;
+  }
+
+  .feedback-form__contasts {
+    box-sizing: border-box;
+    width: 616px;
+    margin: 0 auto;
+    border: 2px solid #e5e5e5;
+    padding: 39px 57px 0 57px;
+    order: -2;
+  }
+
+  .feedback-form__contasts-item {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 31px;
+  }
+
+  .feedback-form__title--contast {
+    margin-right: 15px;
+  }
+
+  .feedback-form__label--contasts {
+    margin: 0;
+    margin-top: 12px;
+    margin-left: 20px;
+  }
+
+  .feedback-form__progress-wrapper {
+    background-color: $white;
+  }
+
+  .feedback-form__progress {
+    box-sizing: border-box;
+    width: 616px;
+    margin: 0 auto;
+    border: 2px solid #e5e5e5;
+    padding: 48px 42px 20px;
+  }
+
+  .feedack-form__textaria-wrapper {
+    margin-bottom: 73px;
+  }
+
+  .feedback-form__textaria {
+    box-sizing: border-box;
+    width: 616px;
+    border: 2px solid #e5e5e5;
+    padding: 34px 60px;
+  }
+
+  .feedback-form__textfield {
+    width: 100%;
+  }
+
+  .feedback-form__button-wrapper {
+    width: 616px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

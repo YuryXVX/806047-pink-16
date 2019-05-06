@@ -102,15 +102,15 @@
             </div>
 
             <fieldset class="feedback-form__contasts">
-              <legend class="visually-hidden">Контактные данные Пользователя</legend>
+              <legend class="feedback-form__title feedback-form__title--contast">Контактная информация</legend>
               <ul class="feedback-form__contasts-list">
                 <li class="feedback-form__contasts-item">
-                  <label class="feedback-form__label feedback-form__label--user-data" for="tel">Номер телефона</label>
-                  <input class="feedback-form__text-field" type="text" name="tel" id="tel" placeholder="Номер, пожалуйста" required>
+                  <label class="feedback-form__label feedback-form__label--contasts" for="tel">Номер телефона</label>
+                  <input class="feedback-form__text-field feedback-form__text-field--contasts feedback-form__text-field--tel" type="text" name="tel" id="tel" placeholder="Номер, пожалуйста" required>
                 </li>
                 <li class="feedback-form__contasts-item">
-                  <label class="feedback-form__label feedback-form__label--user-data" for="email">Адрес почты</label>
-                  <input class="feedback-form__text-field" id="email" type="text" placeholder="Введите почту *" required>
+                  <label class="feedback-form__label feedback-form__label--contasts" for="email">Адрес почты</label>
+                  <input class="feedback-form__text-field feedback-form__text-field--contasts feedback-form__text-field--email" id="email" type="text" placeholder="Введите почту *" required>
                 </li>
               </ul>
             </fieldset>
@@ -141,8 +141,10 @@
               </fieldset>
             </div>
 
-            <button class="feedback-form__button" type="submit">Отправить форму</button>
-            <span class="feedback-form__required-field"><sup>*</sup> — обязательные поля</span>
+            <div class="feedback-form__button-wrapper">
+              <button class="feedback-form__button" type="submit">Отправить форму</button>
+              <span class="feedback-form__required-field"><sup>*</sup> — обязательные поля</span>
+            </div>
           </form>
         </div>
 
