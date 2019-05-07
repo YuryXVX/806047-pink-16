@@ -31,7 +31,7 @@
 
 @media (min-width: $tablet-width) {
   .contest-feedback {
-    padding-top: 173px;
+    padding-top: 121px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -44,9 +44,11 @@
   }
 
   .contest-feedback__title {
-    padding-bottom: 50px;
     font-size: 50px;
-    line-height: 56px;
+    line-height: 58px;
+    padding-right: 57px;
+    padding-left: 62px;
+    padding-bottom: 84px;
   }
 
   .contest-feedback__header {

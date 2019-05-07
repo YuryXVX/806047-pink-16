@@ -246,6 +246,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 47px;
   }
 
   .feedback-form__username {
@@ -274,6 +275,7 @@
     background-color: $white;
     padding: 0;
     order: -3;
+    margin-bottom: 56px;
   }
 
   .feedback-form__app {
@@ -281,6 +283,19 @@
     width: 616px;
     margin: 0 auto;
     border: 2px solid  #e5e5e5;
+    padding: 47px 46px 14px;
+  }
+
+  .feedback-form__app-item {
+    margin-bottom: 46px;
+  }
+
+  .feedback-form__radio + label::before {
+    left: -10px;
+  }
+
+  .feedback-form__radio:checked + label::before {
+    left: -10px;
   }
 
   .feedback-form__title {
@@ -296,6 +311,7 @@
     border: 2px solid #e5e5e5;
     padding: 39px 57px 0 57px;
     order: -2;
+    margin-bottom: 55px;
   }
 
   .feedback-form__contasts-item {
@@ -316,6 +332,8 @@
 
   .feedback-form__progress-wrapper {
     background-color: $white;
+    padding: 0;
+    margin-bottom: 22px;
   }
 
   .feedback-form__progress {
@@ -323,7 +341,15 @@
     width: 616px;
     margin: 0 auto;
     border: 2px solid #e5e5e5;
-    padding: 48px 42px 20px;
+    padding: 48px 47px 20px;
+  }
+
+  .feedback-form__checkbox + label::before {
+    left: -10px;
+  }
+
+  .feedback-form__checkbox:checked + label::before {
+    left: -10px;
   }
 
   .feedack-form__textaria-wrapper {
@@ -345,5 +371,54 @@
     width: 616px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .feedback-form__button {
+    margin: 0;
+    padding: 14px 56px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__username {
+    width: 431px;
+  }
+
+  .feedback-form__app {
+    width: 431px;
+  }
+
+  .feedback-form__contasts {
+    width: 936px;
+  }
+
+  .feedback-form__contasts-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feedback-form__text-field--contasts {
+    width: 371px;
+  }
+
+  .feedback-form__progress {
+    width: 936px;
+  }
+
+  .feedback-form__progress-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feedback-form__progress-item {
+    flex-grow: 1;
+  }
+
+  .feedback-form__textaria {
+    width: 936px;
+  }
+
+  .feedback-form__button-wrapper {
+    width: 936px;
   }
 }
