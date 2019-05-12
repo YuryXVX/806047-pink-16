@@ -102,6 +102,7 @@
           <ul class="rewiew__list slider__list">
             <li class="rewiew__item slider__item">
               <h3 class="rewiew__title">Николай Петров</h3>
+              <span class="rewiew__user-about">25 лет, водитель трамвая</span>
               <p class="rewiew__discription">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="rewiew__item slider__item">
@@ -113,7 +114,9 @@
               <p class="rewiew__discription"></p>
             </li>
           </ul>
-          <p class="rewiew__toggles slider__toggles">
+          <button class="rewiew__toggle-desktop rewiew_prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+          <button class="rewiew__toggle-desktop rewiew_next" type="button"><span  class="visually-hidden">Следующуй отзыв</span></button>
+          <p class="rewiew__toggles slider__toggles-list">
             <button class="slider__toggles slider__toggles--active" type="button">1</button>
             <button class="slider__toggles" type="button">2</button>
             <button class="slider__toggles" type="button">3</button>
@@ -123,41 +126,41 @@
 
       <section class="price">
         <div class="price__wrapper slider">
-          <h2>Стоимость тарифов</h2>
+          <h2 class="visually-hidden">Стоимость тарифов</h2>
           <table class="price__list">
             <thead>
               <tr class="price__header">
-                <th class="price__header-item">
-                  <span>Тарифы:</span>
+                <th class="visually-hidden">
+                  <span class="visually-hidden">Тарифы:</span>
                 </th>
-                <th class="price__header-item">
+                <th class="price__header-item price__header-item--title">
                   <span class="price__title">База</span>
                 </th>
-                <th class="price__header-item price__header-item--hit">
+                <th class="price__header-item price__header-item--title price__header-item--hit">
                   <span class="price__title">Стандарт</span>
                 </th>
-                <th class="price__header-item">
+                <th class="price__header-item price__header-item--title">
                   <span class="price__title">Анлим</span>
                 </th>
               </tr>
               <tr class="price__header">
-                <th class="price__header-item">
-                  <span class="price__value visually-hidden">Стоимость:</span>
+                <th class="visually-hidden">
+                  <span class="visually-hidden">Стоимость:</span>
                 </th>
-                <th class="price__header-item">
-                  <span class="price__value">1,99 USD</span>
+                <th class="price__header-item price__header-item--cost">
+                  <span class="price__value-item">1,99 USD</span>
                 </th>
-                <th class="price__header-item">
-                  <span class="price__value">3,99 USD</span>
+                <th class="price__header-item price__header-item--cost">
+                  <span class="price__value-item">3,99 USD</span>
                 </th>
-                <th class="price__header-item">
-                  <span class="price__value">9,99 USD</span>
+                <th class="price__header-item price__header-item--cost">
+                  <span class="price__value-item">9,99 USD</span>
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr class="price__body">
-                <th class="price__body-item">
+                <th class="price__body-item price__body-item--description">
                   <span class="price__description">Розовый фильтр</span>
                 </th>
                 <th class="price__body-item">
@@ -171,7 +174,7 @@
                 </th>
               </tr>
               <tr class="price__body">
-                <th class="price__body-item">
+                <th class="price__body-item price__body-item--description">
                   <span class="price__description">Смайлики</span>
                 </th>
                 <th class="price__body-item">
@@ -185,7 +188,7 @@
                 </th>
               </tr>
               <tr>
-                <th class="price__body-item">
+                <th class="price__body-item price__body-item--description">
                   <span class="price__description">Комментарии</span>
                 </th>
                 <th class="price__body-item">
@@ -200,7 +203,7 @@
               </tr>
             </tbody>
           </table>
-          <p class="price__toggles slider__toggles">
+          <p class="price__toggles slider__toggles-list">
             <button class="slider__toggles" type="button">1</button>
             <button class="slider__toggles slider__toggles--active" type="button">2</button>
             <button class="slider__toggles" type="button">3</button>

@@ -27,6 +27,13 @@
 .advantages__item--mobile-img {
   padding-bottom: 322px;
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 148px/ 157px 320px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: 157px 320px;
+    background-position: center 148px;
+  }
 }
 
 .advantages__title {

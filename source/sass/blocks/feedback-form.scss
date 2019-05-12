@@ -380,16 +380,54 @@
 }
 
 @media (min-width: $desktop-width) {
+  .feedback-form {
+    width: 100%;
+    background-color: $white;
+  }
+
+  .feedback-form__form {
+    width: 936px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
   .feedback-form__username {
     width: 431px;
+    padding: 0 3px 48px 4px;
+    margin: 0;
+  }
+
+  .feedback-form__username-item {
+    margin-bottom: 54px;
+  }
+
+  .feedback-form__username-item:last-child {
+    margin: 0;
   }
 
   .feedback-form__app {
     width: 431px;
+    padding: 0;
+  }
+
+  .feedback-form__title {
+    padding: 0 34px;
+  }
+
+  .feedback-form__app-list {
+    padding: 50px 60px 6px 60px;
+  }
+
+  .feedback-form__label--progress {
+    padding-left: 57px;
   }
 
   .feedback-form__contasts {
     width: 936px;
+  }
+
+  .feedback-form__contasts-item {
+    margin-bottom: 14px;
   }
 
   .feedback-form__contasts-list {
@@ -403,19 +441,50 @@
 
   .feedback-form__progress {
     width: 936px;
+    padding-bottom: 0;
   }
 
   .feedback-form__progress-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .feedback-form__progress-item {
+    width: 255px;
     flex-grow: 1;
+  }
+
+  .feedback-form__progress-item--selfi {
+    order: 1;
+  }
+
+  .feedback-form__progress-item--see {
+    order: 2;
+  }
+
+  .feedback-form__progress-item--tower {
+    order: 3;
+  }
+
+  .feedback-form__progress-item--burn {
+    order: 4;
+  }
+
+  .feedback-form__progress-item--souvenir {
+    order: 5;
+  }
+
+  .feedback-form__progress-item--hotel {
+    order: 6;
   }
 
   .feedback-form__textaria {
     width: 936px;
+  }
+
+  .feedback-form__textfield {
+    padding-bottom: 79px;
   }
 
   .feedback-form__button-wrapper {
