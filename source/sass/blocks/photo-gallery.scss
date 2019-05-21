@@ -8,6 +8,11 @@
   background-position: top center;
   background-size: 100% 462px;
   text-align: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 100% 462px;
+  }
 }
 
 .photo-gallery__title {
@@ -32,6 +37,11 @@
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: 1200px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .photo-gallery__title {
@@ -52,6 +62,11 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 2560px 853px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px 853px;
+    }
   }
 
   .photo-gallery__title {
