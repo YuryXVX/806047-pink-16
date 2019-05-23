@@ -1,7 +1,7 @@
 
 .photo-gallery {
   margin: 0 auto;
-  padding-top: 101px;
+  padding-top: 96px;
   background-color: $bg-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -20,19 +20,19 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
-  padding: 0 76px 70px;
+  padding: 0 76px 82px;
   color: $white;
 }
 
 .photo-gallery__header {
   text-align: center;
-  padding: 46px 43px 39px;
+  padding: 46px 43px 51px;
   background-color: $white;
 }
 
 @media (min-width: $tablet-width) {
   .photo-gallery {
-    padding-top: 191px;
+    padding-top: 182px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -45,13 +45,13 @@
   }
 
   .photo-gallery__title {
-    padding-bottom: 150px;
+    padding-bottom: 146px;
     font-size: 50px;
     line-height: 56px;
   }
 
   .photo-gallery__header {
-    padding: 92px 112px 64px 112px;
+    padding: 92px 112px 66px 112px;
   }
 }
 

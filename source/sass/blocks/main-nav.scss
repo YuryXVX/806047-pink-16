@@ -12,10 +12,20 @@
 }
 
 .main-nav__logo {
-  display: block;
+  display: flex;
+  justify-content: flex-start;
   width: 75px;
   height: 22px;
   margin: 22px auto 22px 20px;
+  color: $white;
+}
+
+.main-nav__logo-tablet {
+  display: none;
+}
+
+.main-nav__logo-desktop {
+  display: none;
 }
 
 .main-nav__toggle {
@@ -89,6 +99,14 @@
   fill: rgba($color: $white, $alpha: 0.3);
 }
 
+.main-nav__logo:hover {
+  color: $pink;
+}
+
+.main-nav__logo:active {
+  color: rgba($color: $white, $alpha: 0.3);
+}
+
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .site-list__item {
     display: none;
@@ -121,10 +139,26 @@
   .main-nav__logo {
     width: 147px;
     height: 40px;
-    background: red;
     margin-top: 27px;
     margin-right: auto;
     margin-bottom: 20px;
+  }
+
+  .main-nav__logo-tablet {
+    fill: $white;
+    display: block;
+  }
+
+  .main-nav__logo-tablet:hover {
+    fill: $pink;
+  }
+
+  .main-nav__logo-tablet:active {
+    fill: rgba($color: $white, $alpha: 0.3);
+  }
+
+  .main-nav__logo-mobile {
+    display: none;
   }
 
   .main-nav__toggle {
@@ -158,5 +192,22 @@
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__logo-tablet {
+    display: none;
+  }
+
+  .main-nav__logo-desktop {
+    display: block;
+    fill: $white;
+  }
+
+  .main-nav__logo-desktop:hover {
+    fill: $pink;
+  }
+
+  .main-nav__logo-desktop:active {
+    fill: rgba($color: $white, $alpha: 0.3);
   }
 }

@@ -1,4 +1,9 @@
 
+.logo__mobile-tablet {
+  width: 147px;
+  height: 40px;
+}
+
 .logo__mobile:hover path,
 .logo__mobile:focus path {
   fill: $pink;
@@ -6,4 +11,41 @@
 
 .logo__mobile:active path {
   fill: rgba($pink, $alpha: 0.3);
+}
+
+.logo__logo-desktop {
+  display: none;
+}
+
+.logo__link {
+  width: 147px;
+  height: 40px;
+  color: $black;
+}
+
+.logo__link:hover {
+  color: $pink;
+}
+
+.logo__link:active {
+  color: rgba($pink, $alpha: 0.3);
+}
+
+.logo__logo-icon {
+  fill: $pink;
+}
+
+.logo__logo-icon:active {
+  fill: rgba($pink, $alpha: 0.3);
+}
+
+@media (min-width: $desktop-width) {
+  .logo__logo-desktop {
+    display: block;
+    fill: $pink;
+  }
+
+  .logo__logo-tablet {
+    display: none;
+  }
 }

@@ -52,6 +52,7 @@
   min-width: 280px;
   padding: 21px 20px 22px 17px;
   margin: 0 20px;
+  margin-bottom: 7px;
 }
 
 .users-post__author-name {
@@ -113,6 +114,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .users-post {
+    width: 100%;
+    background-color: $white;
+  }
+
   .users-post__item {
     width: 300px;
     margin: 10px;
@@ -122,7 +128,7 @@
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 31px;
   }
 
   .users-post__description {
@@ -130,6 +136,11 @@
     display: flex;
     flex-wrap: wrap;
     min-height: 155px;
+    padding: 26px;
+  }
+
+  .users-post__author-name {
+    margin-right: 5px;
   }
 
   .users-post__comment {
@@ -163,6 +174,10 @@
   }
 
   .users-post__like-wrapper::before {
+    left: 228px;
+  }
+
+  .users-post__like-wrapper--panorama::before {
     left: 110px;
   }
 
@@ -176,6 +191,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .users-post__list {
+    margin: 0 auto;
+  }
+
+  .users-post__item {
+    margin: 24px 7px;
+  }
+
   .users-post__photo-mobile--panorama {
     top: 54px;
     height: 506px;

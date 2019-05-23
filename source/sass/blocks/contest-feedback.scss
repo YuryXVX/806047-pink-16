@@ -52,7 +52,7 @@
   }
 
   .contest-feedback__header {
-    padding: 92px 112px 64px 112px;
+    padding: 92px 86px 64px 80px;
   }
 }
 
@@ -71,7 +71,11 @@
   }
 
   .contest-feedback__title {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding: 0;
+    padding-bottom: 103px;
+  }
+
+  .contest-feedback__header {
+    padding: 93px 35px 74px;
   }
 }

@@ -1,5 +1,6 @@
 .social__list {
   display: flex;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -12,6 +13,7 @@
   border: 3px solid rgba($color: $bg-color, $alpha: 0.1);
   background-position: center center;
   background-repeat: no-repeat;
+  margin: 0 8px;
 
   &:hover,
   &:focus {
@@ -38,6 +40,7 @@
 
 @media (min-width: $tablet-width) {
   .social__item {
+    margin: 0;
     margin-right: 10px;
   }
 

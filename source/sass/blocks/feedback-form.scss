@@ -41,11 +41,24 @@
   padding: 22px 79px 18px 20px;
 }
 
+.feedback-form__text-field:hover,
+.feedback-form__text-field:focus {
+  border-color: $black;
+}
+
+.feedback-form__text-field:active {
+  border-color: $pink;
+}
+
 .feedback-form__text-field::placeholder {
   color: $black;
   line-height: 1.67;
   font-size: 18px;
   font-family: inherit;
+}
+
+.feedback-form__text-field::placeholder:hover {
+  color: $pink;
 }
 
 .feedback-form__progress-wrapper {
@@ -109,6 +122,15 @@
   background-color: $white;
 }
 
+.feedback-form__checkbox:hover + label::before,
+.feedback-form__checkbox:focus + label::before {
+  border-color: $black;
+}
+
+.feedback-form__checkbox:active + label::before {
+  border-color: $pink;
+}
+
 .feedback-form__checkbox:checked + label::before {
   content: "";
   display: block;
@@ -119,6 +141,10 @@
   background-color: $white;
   background-image: url("../img/icon-yes.svg");
   background-position: center center;
+}
+
+.feedback-form__checkbox:active:checked + label::before {
+  border-color: $pink;
 }
 
 .feedback-form__app-wrapper {
@@ -171,6 +197,15 @@
   background-color: $white;
 }
 
+.feedback-form__radio:hover + label::before,
+.feedback-form__radio:focus + label::before {
+  border-color: $black;
+}
+
+.feedback-form__radio:active + label::before {
+  border-color: $pink;
+}
+
 .feedback-form__radio:checked + label::before {
   content: "";
   display: block;
@@ -182,6 +217,15 @@
   border: solid 2px #e5e5e5;
   box-shadow: inset $white 0 0 0 11px;
   background-color: $pink;
+}
+
+.feedback-form__radio:hover:checked + label::before,
+.feedback-form__radio:focus:checked + label::before {
+  border-color: $black;
+}
+
+.feedback-form__radio:active:checked + label::before {
+  border-color: $pink;
 }
 
 .feedack-form__textaria-wrapper {
@@ -218,16 +262,8 @@
 }
 
 .feedback-form__button {
-  box-sizing: border-box;
-  border: solid 2px #2aab6d;
-  font: inherit;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
   padding: 15px 46px;
-  background-color: #2aab6d;
   margin-bottom: 37px;
-  color: $white;
 }
 
 .feedback-form__required-field {
@@ -239,6 +275,10 @@
 .feedback-form__required-field sup {
   font-size: 12px;
   color: $pink;
+}
+
+.feedback-form__required-text {
+  font-size: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -328,6 +368,7 @@
     margin: 0;
     margin-top: 12px;
     margin-left: 20px;
+    position: relative;
   }
 
   .feedback-form__progress-wrapper {
@@ -377,6 +418,28 @@
     margin: 0;
     padding: 14px 56px;
   }
+
+  .feedback-form__label--contasts::before {
+    content: "";
+    width: 60px;
+    height: 56px;
+    display: block;
+    z-index: 2;
+    position: absolute;
+    background-color: #e5e5e5;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: -70px;
+    left: 416px;
+  }
+
+  .feedback-form__label--tel::before {
+    background-image: url("../../img/icon-phone.svg");
+  }
+
+  .feedback-form__label--email::before {
+    background-image: url("../../img/icon-mail.svg");
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -415,7 +478,7 @@
   }
 
   .feedback-form__app-list {
-    padding: 50px 60px 6px 60px;
+    padding: 40px 60px 17px 60px;
   }
 
   .feedback-form__label--progress {
@@ -441,18 +504,19 @@
 
   .feedback-form__progress {
     width: 936px;
-    padding-bottom: 0;
+    padding: 50px 0 9px 44px;
   }
 
   .feedback-form__progress-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .feedback-form__progress-item {
-    width: 255px;
-    flex-grow: 1;
+    width: 275px;
+    margin: 0;
+    margin-bottom: 45px;
   }
 
   .feedback-form__progress-item--selfi {
@@ -479,15 +543,28 @@
     order: 6;
   }
 
+  .feedack-form__textaria-wrapper {
+    margin-bottom: 65px;
+  }
+
   .feedback-form__textaria {
     width: 936px;
+    padding: 34px 60px 40px;
   }
 
   .feedback-form__textfield {
-    padding-bottom: 79px;
+    padding-bottom: 74px;
   }
 
   .feedback-form__button-wrapper {
     width: 936px;
+  }
+
+  .feedback-form__label--contasts::before {
+    left: 290px;
+  }
+
+  .feedback-form__required-text {
+    font-size: 14px;
   }
 }

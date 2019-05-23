@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 33px;
 }
 
 .photo-filter__wrapper {
@@ -20,14 +21,34 @@
 }
 
 .photo-filter__options {
-  width: 240px;
+  width: 235px;
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   justify-content: space-around;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+  position: relative;
+}
+
+.photo-filter__options::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 320px;
+  height: 1px;
+  bottom: -65px;
+  background-color: rgba($black, $alpha: 0.1);
+}
+
+.photo-filter__icon {
+  opacity: 0.3;
+}
+
+.photo-filter__icon--crop {
+  fill: $pink;
+  opacity: 1;
 }
 
 .photo-filter__controls {
@@ -50,10 +71,23 @@
   border: solid 2px #d22856;
   cursor: pointer;
 
-  &--max {
+  &--crop {
     top: -7px;
     left: 80%;
+    background-color: $pink;
   }
+
+  &--fill {
+    top: -7px;
+  }
+
+  &--contrast {
+    top: -7px;
+  }
+}
+
+.photo-filter__toggle--active {
+  background-color: $pink;
 }
 
 .photo-filter__controls--fill,
@@ -71,17 +105,48 @@
   color: $pink;
   line-height: 1;
   border: solid 3px $pink;
+  background-color: transparent;
+}
 
-  &--disabled {
-    color: rgba(40, 54, 69, 0.1);
-    border-color: rgba($black, $alpha: 0.1);
-  }
+.photo-filter__button:hover,
+.photo-filter__button:focus {
+  background-color: $pink;
+  color: $white;
+}
+
+.photo-filter__button:active {
+  color: rgba($white, $alpha: 0.3);
+}
+
+.photo-filter__button--cancel {
+  width: 280px;
+  font-size: 18px;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 14px 88px 15px 87px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: rgba(40, 54, 69, 0.1);
+  line-height: 1;
+  border: solid 3px rgba($black, $alpha: 0.1);
+}
+
+.photo-filter__button--cancel:hover,
+.photo-filter__button--cancel:focus {
+  background-color: transparent;
+  border-color: rgba($black, $alpha: 0.3);
+  color: rgba(40, 54, 69, 0.3);
+}
+
+.photo-filter__button--cancel:active {
+  background-color: rgba($black, $alpha: 0.3);
+  color: rgba($white, $alpha: 0.3);
 }
 
 @media (min-width: $tablet-width) {
   .photo-filter__form {
     width: 660px;
-    padding: 57px 20px;
+    padding: 53px 40px 30px 12px;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -100,6 +165,17 @@
     height: 400px;
   }
 
+  .photo-filter__icon {
+    width: 22px;
+    fill: $pink;
+    opacity: 1;
+  }
+
+  .photo-filter__icon--contrast {
+    width: 16px;
+    height: 16px;
+  }
+
   .photo-filter__controls--fill,
   .photo-filter__controls--contrast {
     display: block;
@@ -112,12 +188,18 @@
     margin-right: auto;
   }
 
+  .photo-filter__options::after {
+    display: none;
+  }
+
   .photo-filter__options-item {
-    outline: 2px solid red;
+    position: relative;
+    margin-bottom: 27px;
   }
 
   .photo-filter__controls-wrapper {
-    align-self: flex-start;
+    align-self: center;
+    padding-right: 6px;
   }
 
   .photo-filter__controls {
@@ -125,14 +207,117 @@
     margin-bottom: 68px;
   }
 
+  .photo-filter__controls::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 275px;
+    bottom: -40px;
+    left: -56px;
+    height: 1px;
+    background-color: rgba($black, $alpha: 0.1);
+  }
+
   .photo-filter__buttons {
     display: flex;
     flex-direction: column;
     margin-left: auto;
+    margin-top: 20px;
+  }
+
+  .photo-filter__button-cancel {
+    width: 100%;
   }
 
   .photo-filter__button {
     width: 260px;
     padding: 14px 88px 15px 78px;
+    margin-bottom: 26px;
+  }
+
+  .photo-filter__toggle {
+    &--crop {
+      left: 73%;
+    }
+
+    &--fill {
+      left: 13%;
+      background-color: $pink;
+    }
+
+    &--contrast {
+      left: 48%;
+      background-color: $pink;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-filter__form {
+    width: 940px;
+    box-sizing: border-box;
+    padding: 60px 60px 27px 80px;
+  }
+
+  .photo-filter__wrapper {
+    margin-bottom: 135px;
+    margin-right: 90px;
+  }
+
+  .photo-filter__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .photo-filter__icon--fill {
+    width: 48px;
+  }
+
+  .photo-filter__icon--contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+  .photo-filter__controls::after {
+    width: 410px;
+    left: -104px;
+    top: 37px;
+  }
+
+  .photo-filter__controls-wrapper {
+    padding-top: 20px;
+    padding-right: 29px;
+    align-self: baseline;
+  }
+
+  .photo-filter__buttons {
+    flex-direction: row;
+  }
+
+  .photo-filter__controls {
+    width: 288px;
+  }
+
+  .photo-filter__toggle {
+    &--crop {
+      left: 25%;
+    }
+
+    &--fill {
+      left: 86%;
+    }
+
+    &--contrast {
+      left: 56%;
+    }
+  }
+
+  .photo-filter__button {
+    width: 183px;
+    padding: 14px 32px 15px 39px;
+  }
+
+  .photo-filter__button--cancel {
+    margin-left: 44px;
   }
 }
