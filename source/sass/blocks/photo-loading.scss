@@ -7,11 +7,28 @@
 
 .photo-loading__discription {
   background-color: $white;
-  padding: 49px 36px;
+  padding: 39px 5px 44px 5px;
 }
 
 .photo-loading__form {
   width: 100%;
   margin: 0 auto;
   background-color: $white-three;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-loading__discription {
+    padding: 50px 0 73px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-loading {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .photo-loading__discription {
+    padding: 36px 0 68px 0;
+  }
 }

@@ -9,6 +9,7 @@
   color: $black;
   font-weight: 300;
   line-height: 29px;
+  margin-bottom: 27px;
 }
 
 .slogan__title--photo {
@@ -22,6 +23,10 @@
   color: $black;
 }
 
+.slogan__discription-text {
+  font-size: 0;
+}
+
 @media (min-width: $tablet-width) {
   .slogan__title--photo {
     font-size: 50px;
@@ -33,10 +38,15 @@
     line-height: 1.67;
   }
 
+  .slogan__discription-text {
+    font-size: 18px;
+  }
+
   .slogan__title {
     font-size: 40px;
     font-weight: 300;
     line-height: 44px;
+    margin-bottom: 7px;
   }
 }
 

@@ -9,10 +9,12 @@
 
 .price__wrapper {
   padding-top: 159px;
+  padding-bottom: 95px;
+  margin-bottom: 7px;
 }
 
 .price__list {
-  min-width: 616px;
+  min-width: 621px;
   margin: 0 auto;
   border-collapse: collapse;
   color: $black;
@@ -23,6 +25,7 @@
   border-left: 2px solid $white;
   background-color: $bg-color;
   position: relative;
+  text-align: center;
 }
 
 .price__header-item--title {
@@ -39,11 +42,11 @@
   content: "";
   position: absolute;
   top: 0;
-  left: -2px;
+  left: 0;
   display: block;
   width: 74px;
   height: 73px;
-  background-image: url("../../img/bg-hit.svg");
+  background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 74px 73px;
@@ -54,11 +57,11 @@
   content: "Хит";
   position: absolute;
   display: block;
-  top: 15px;
-  left: 15px;
+  font-family: inherit;
+  top: 10px;
+  left: 10px;
   color: $white;
   text-transform: uppercase;
-  font-size: 10px;
   font-weight: normal;
   line-height: 2.1;
   transform: rotate(-45deg);
@@ -80,16 +83,13 @@
   color: $white;
 }
 
-.price__toggles {
-  display: none;
-}
-
 .price__body-item {
   width: 234px;
   padding: 14px 21px;
   border: 2px solid #e5e5e5;
   background-color: $white;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .price__body-item--description {
@@ -97,9 +97,8 @@
 }
 
 .price__description {
-  line-height: 1.67;
   font-size: 18px;
-  font-weight: 500;
+  line-height: 1.67;
 }
 
 .price__value {
@@ -111,54 +110,154 @@
   content: "";
   display: block;
   position: absolute;
+  top: -23px;
   left: -14px;
   width: 31px;
-  height: 26px;
+  height: 36px;
   background-repeat: no-repeat;
 }
 
 .price__value--yes::before {
-  background-image: url("../../img/icon-yes.svg");
+  background-image: url("../img/icon-boolean-true.svg");
   background-size: 31px 26px;
 }
 
 .price__value--no::before {
-  background-image: url("../../img/icon-no.svg");
+  background-image: url("../img/icon-boolean-false.svg");
 }
 
+.price__toggles {
+  display: none;
+}
+
+@media (max-width: 959px) {
+  .price__wrapper {
+    width: 660px;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 70px;
+  }
+
+  .price__list {
+    margin: 0 22px;
+  }
+
+  .price__body-item {
+    width: 150px;
+    padding: 10px 14px;
+  }
+
+  .price__header-item--hit::before {
+    background-image: url("../img/bg-hit-tablet.svg");
+    background-size: 64px 81px;
+    top: -9px;
+    left: -8px;
+    background-position-x: 9px;
+  }
+
+  .price__header-item--hit::after {
+    top: 7px;
+    left: 7px;
+  }
+
+  .price__header-item--cost {
+    padding-bottom: 14px;
+  }
+
+  .price__value-item {
+    font-size: 18px;
+  }
+
+  .price__title {
+    line-height: 1.67;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .price__description {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .price__body-item--description {
+    padding: 0;
+  }
+
+  .price__toggles {
+    display: none;
+  }
+}
 
 @media (max-width: 659px) {
   .price__toggles {
-    display: block;
+    min-width: 70px;
+    display: flex;
+    margin-top: 38px;
+    margin-bottom: 45px;
   }
 
   .price__wrapper {
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
+    padding: 0;
+    padding-top: 90px;
   }
 
-  .price__list {
-    width: 840px;
-    position: relative;
-    transform: translate(-263px);
-    transition: 0.5s;
+
+  .price__header-item--hit::before {
+    width: 84px;
+    height: 75px;
+    background-image: url("../img/bg-hit.svg");
+    background-size: 72px 75px;
+    left: -9px;
+    top: -2px;
   }
 
-  .price__body-item {
-    width: 279px;
+  .price__header-item--hit::after {
+    top: 11px;
+    left: 11px;
+    line-height: 2.1;
   }
 
   .price__value::before {
-    left: 80px;
+    left: 89px;
+    top: -20px;
+  }
+
+  .price__title {
+    display: block;
+    width: calc(100vw - 42px);
+    font-size: 18px;
+  }
+
+  .price__value-item {
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 300;
+  }
+
+  .price__header-item--cost {
+    padding-bottom: 20px;
+  }
+
+  .price__header-item--title {
+    padding-top: 16px;
+  }
+
+  .price__body-item {
+    width: calc(100vw - 42px);
+    padding: 18px 14px;
+  }
+
+  .price__description {
+    padding: 0 10px;
   }
 
   .price__body-item--description {
-    right: 279px;
     position: absolute;
-    margin-left: auto;
     background-color: transparent;
-    border: none;
+    border-color: transparent;
     text-transform: uppercase;
     font-size: 14px;
   }

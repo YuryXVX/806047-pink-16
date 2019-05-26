@@ -1,0 +1,27 @@
+
+.button-form {
+  box-sizing: border-box;
+  border: solid 2px #2aab6d;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  color: $white;
+}
+
+.button-form:hover,
+.button-form:focus {
+  border: solid 2px #1c9b5e;
+  background-color: #1c9b5e;
+}
+
+.button-form:active {
+  color: rgba($white, $alpha: 0.3);
+  transition: 0.3;
+}
+
+.button-form:disabled {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
