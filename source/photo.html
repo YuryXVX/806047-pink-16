@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Пинк страница с фото</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
   </head>
 
   <body>
+    <!--
     <svg style="display: none">
       <symbol viewBox="0 0 74.426 22.859" id="logo-pink-mobile">
         <g fill="currentColor">
@@ -67,14 +68,14 @@
           </g>
         </symbol>
 
-        <symbol viewBox="0 0 48 48" id="logo-pink-crop">
+        <symbol viewBox="0 0 48 48" id="icon-editor-crop">
           <g>
             <path fill="none" d="M0,0h48v48H0V0z"/>
             <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
           </g>
         </symbol>
 
-        <symbol viewBox="0 0 48 48" id="logo-pink-fill">
+        <symbol viewBox="0 0 48 48" id="icon-editor-fill">
           <g>
             <path fill="none" d="M0,0h48v48H0V0z"/>
             <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
@@ -82,7 +83,7 @@
           </g>
         </symbol>
 
-        <symbol viewBox="-35.422 -7.96 31.92 31.92" id="logo-pink-contrast">
+        <symbol viewBox="-35.422 -7.96 31.92 31.92" id="icon-editor-contrast">
           <g>
             <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
             <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
@@ -90,22 +91,25 @@
           </g>
         </symbol>
     </svg>
-
+    -->
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-header page-header--other">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
-            <svg class="main-nav__logo-image main-nav__logo-mobile" >
-              <use xmlns:xlink="http://www.w3.org/1999/xlink"  xlink:href="#logo-pink-mobile">
+            <svg class="main-nav__logo-image main-nav__logo-mobile" width="75" height="22">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile">
               </use>
             </svg>
-            <svg class="main-nav__logo-tablet">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink"  xlink:href="#logo-pink-tablet">
+            <svg class="main-nav__logo-tablet" width="147" height="40">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-tablet">
               </use>
             </svg>
-            <svg class="main-nav__logo-desktop">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink"  xlink:href="#logo-pink-desktop">
+            <svg class="main-nav__logo-desktop" width="147" height="40">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-desktop">
               </use>
             </svg>
           </a>
@@ -140,6 +144,10 @@
             <li class="users-post__item users-post__item--panorama">
               <a class="users-post__photo-link" href="#">
                 <picture class="users-post__photo-wrapper users-post__photo-wrapper--panorama">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+
                   <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
                   <img class="users-post__photo-mobile users-post__photo-mobile--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -157,6 +165,10 @@
             <li class="users-post__item">
               <a class="users-post__photo-link" href="#">
                 <picture class="users-post__photo-wrapper">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+
                   <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg">
                   <img class="users-post__photo-mobile" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -174,6 +186,10 @@
             <li class="users-post__item">
               <a class="users-post__photo-link" href="#">
                 <picture class="users-post__photo-wrapper">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+
                   <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
                   <img class="users-post__photo-mobile" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -191,6 +207,10 @@
             <li class="users-post__item">
               <a class="users-post__photo-link" href="#">
                 <picture class="users-post__photo-wrapper">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+
                   <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                   <img class="users-post__photo-mobile" src="img/photo-window-mobile@1x.jpg" scrset="img/photo-window-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -208,6 +228,10 @@
             <li class="users-post__item">
               <a class="users-post__photo-link" href="#">
                 <picture class="users-post__photo-wrapper">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+
                   <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
                   <img class="users-post__photo-mobile" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -225,6 +249,10 @@
             <li class="users-post__item">
               <a class="users-post__photo-link" href="#">
                 <picture class="users-post__photo-wrapper">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+
                   <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
                   <img class="users-post__photo-mobile" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -242,6 +270,10 @@
             <li class="users-post__item">
               <a class="users-post__photo-link" href="#">
                 <picture class="users-post__photo-wrapper">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+
                   <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
                   <img class="users-post__photo-mobile" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -272,6 +304,10 @@
         <div class="photo-loading__form photo-filter">
           <form class="photo-filter__form" method="POST" action="http://echo.htmlacademy.ru">
             <picture class="photo-filter__wrapper">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
               <img class="photo-filter__user-photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загруженное фото">
@@ -279,20 +315,20 @@
             <ul class="photo-filter__options">
               <li class="photo-filter__options-item">
                 <svg class="photo-filter__icon photo-filter__icon--crop" width="48" height="48">
-                  <use xmlns="http://www.w3.org/2000/svg"xlink:href="#logo-pink-crop">
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-editor-crop">
                   </use>
                 </svg>
               </li>
               <li class="photo-filter__options-item">
                 <svg class="photo-filter__icon photo-filter__icon--fill" width="48" height="48">
-                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="#logo-pink-fill">
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-editor-fill">
                   </use>
                 </svg>
 
               </li>
               <li class="photo-filter__options-item">
-                <svg class="photo-filter__icon photo-filter__icon--contrast"  width="32" height="32">
-                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="#logo-pink-contrast">
+                <svg class="photo-filter__icon photo-filter__icon--contrast" width="32" height="32">
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-editor-contrast">
                   </use>
                 </svg>
               </li>
@@ -330,12 +366,12 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo logo">
           <a class="logo__link" href="index.html">
-            <svg class="logo__logo-icon logo__logo-tablet"  width="140" height="40">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink"  xlink:href="#logo-pink-tablet">
+            <svg class="logo__logo-icon logo__logo-tablet" width="150" height="40">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-tablet">
               </use>
             </svg>
-            <svg class="logo__logo-icon logo__logo-desktop" width="140" height="40">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink"  xlink:href="#logo-pink-desktop">
+            <svg class="logo__logo-icon logo__logo-desktop" width="150" height="40">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-desktop">
               </use>
             </svg>
           </a>
@@ -363,7 +399,7 @@
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__link-logo" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-htmlacademy">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy">
               </use>
             </svg>
           </a>
@@ -371,10 +407,11 @@
       </div>
     </footer>
     <script>
+
       var navMain = document.querySelector(".main-nav");
       var navToggle = document.querySelector(".main-nav__toggle");
 
-      navMain.classList.remove("main-nav--nojs");
+      navMain.classList.remove(".main-nav--nojs");
 
       navToggle.addEventListener('click', function() {
         if (navMain.classList.contains("main-nav--closed")) {
@@ -385,6 +422,7 @@
           navMain.classList.remove("main-nav--opened");
         }
       });
+
     </script>
   </body>
 

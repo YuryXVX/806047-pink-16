@@ -135,6 +135,14 @@
     transform: rotate(45deg);
   }
 
+  .rewiew__toggle-desktop:hover::before {
+    border-color: rgba($bg-color, $alpha: 0.6);
+  }
+
+  .rewiew__toggle-desktop:active::before {
+    border-color: rgba($bg-color, $alpha: 0.1);
+  }
+
   .rewiew_prev::before {
     border-right: none;
     border-top: none;

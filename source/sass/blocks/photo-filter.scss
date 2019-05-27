@@ -46,6 +46,15 @@
   opacity: 0.3;
 }
 
+.photo-filter__icon:hover,
+.phpto-filter__icon:active {
+  opacity: 0.5;
+}
+
+.photo-filter__icon:active {
+  color: $pink;
+}
+
 .photo-filter__icon--crop {
   fill: $pink;
   opacity: 1;
@@ -173,12 +182,13 @@
 
   .photo-filter__icon--contrast {
     width: 16px;
-    height: 16px;
   }
 
   .photo-filter__controls--fill,
   .photo-filter__controls--contrast {
     display: block;
+    width: 16px;
+    height: 16px;
   }
 
   .photo-filter__options {

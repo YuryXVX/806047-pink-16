@@ -35,7 +35,7 @@
   }
 
   .slider__film--visible-frame_1 {
-    left: calc(20px - 0 * (100vw - 40px));
+    left: calc(-7px - 0 * (100vw - 40px));
   }
 
   .slider__film--visible-frame_2 {
@@ -43,7 +43,7 @@
   }
 
   .slider__film--visible-frame_3 {
-    left: calc(20px - 2 * (100vw - 40px));
+    left: calc(-7px - 2 * (100vw - 40px));
   }
 
   .slider__fixed-title {

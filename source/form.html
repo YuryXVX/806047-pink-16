@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Пинк страница с формой</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
   </head>
 
   <body>
-
+    <!--
     <svg style="display: none">
       <symbol viewBox="0 0 74.426 22.859" id="logo-pink-mobile">
         <g fill="currentColor">
@@ -66,22 +66,25 @@
         </g>
       </symbol>
     </svg>
-
+    -->
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-header page-header--other">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
-            <svg class="main-nav__logo-image main-nav__logo-mobile" >
-              <use xmlns:xlink="http://www.w3.org/1999/xlink"  xlink:href="#logo-pink-mobile">
+            <svg class="main-nav__logo-image main-nav__logo-mobile" width="75" height="22">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile">
               </use>
             </svg>
-            <svg class="main-nav__logo-tablet">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink"  xlink:href="#logo-pink-tablet">
+            <svg class="main-nav__logo-tablet" width="147" height="40">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-tablet">
               </use>
             </svg>
-            <svg class="main-nav__logo-desktop">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink"  xlink:href="#logo-pink-desktop">
+            <svg class="main-nav__logo-desktop" width="147" height="40">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-desktop">
               </use>
             </svg>
           </a>
@@ -118,11 +121,11 @@
               <ul class="feedback-form__username-list">
                 <li class="feedback-form__username-item">
                   <label class="feedback-form__label feedback-form__label--user-data" for="surname">Фамилия:</label>
-                  <input class="feedback-form__text-field" id="surname" name="surname" type="text" placeholder="Укажите фамилию*" required>
+                  <input class="feedback-form__text-field" id="surname" name="surname" type="text" placeholder="Укажите фамилию*" required="">
                 </li>
                 <li class="feedback-form__username-item">
                   <label class="feedback-form__label feedback-form__label--user-data" for="name">Имя:</label>
-                  <input class="feedback-form__text-field" id="name" name="name" type="text" placeholder="Введите ваше имя *" required>
+                  <input class="feedback-form__text-field" id="name" name="name" type="text" placeholder="Введите ваше имя *" required="">
                 </li>
                 <li class="feedback-form__username-item">
                   <label class="feedback-form__label feedback-form__label--user-data" for="middlename">Отчество:</label>
@@ -136,15 +139,15 @@
                 <legend class="feedback-form__title">Ваши безбашенные достижения в путешествии</legend>
                 <ul class="feedback-form__progress-list">
                   <li class="feedback-form__progress-item feedback-form__progress-item--selfi">
-                    <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="selfi" checked>
+                    <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="selfi" checked="">
                     <label class="feedback-form__label feedback-form__label--progress" for="selfi">Сделал селфи с акулой</label>
                   </li>
                   <li class="feedback-form__progress-item feedback-form__progress-item--burn">
-                    <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="burn" checked>
+                    <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="burn" checked="">
                     <label class="feedback-form__label feedback-form__label--progress" for="burn">Обгорел на пляже</label>
                   </li>
                   <li class="feedback-form__progress-item feedback-form__progress-item--see">
-                    <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="see" checked>
+                    <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="see" checked="">
                     <label class="feedback-form__label feedback-form__label--progress" for="see">Видел Чака Норриса</label>
                   </li>
                   <li class="feedback-form__progress-item feedback-form__progress-item--souvenir">
@@ -152,7 +155,7 @@
                     <label class="feedback-form__label feedback-form__label--progress" for="souvenir">Накупил сувениров</label>
                   </li>
                   <li class="feedback-form__progress-item feedback-form__progress-item--tower">
-                    <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="tower" checked>
+                    <input class="visually-hidden feedback-form__checkbox" type="checkbox" id="tower" checked="">
                     <label class="feedback-form__label feedback-form__label--progress" for="tower">Удержал башню</label>
                   </li>
                   <li class="feedback-form__progress-item feedback-form__progress-item--hotel">
@@ -168,11 +171,11 @@
               <ul class="feedback-form__contasts-list">
                 <li class="feedback-form__contasts-item">
                   <label class="feedback-form__label feedback-form__label--contasts feedback-form__label--tel" for="tel">Номер телефона</label>
-                  <input class="feedback-form__text-field feedback-form__text-field--contasts feedback-form__text-field--tel" type="text" name="tel" id="tel" placeholder="Номер, пожалуйста" required>
+                  <input class="feedback-form__text-field feedback-form__text-field--contasts feedback-form__text-field--tel" type="text" name="tel" id="tel" placeholder="Номер, пожалуйста" required="">
                 </li>
                 <li class="feedback-form__contasts-item">
                   <label class="feedback-form__label feedback-form__label--contasts feedback-form__label--email" for="email">Адрес почты</label>
-                  <input class="feedback-form__text-field feedback-form__text-field--contasts feedback-form__text-field--email" name="email" id="email" type="text" placeholder="Введите почту *" required>
+                  <input class="feedback-form__text-field feedback-form__text-field--contasts feedback-form__text-field--email" name="email" id="email" type="text" placeholder="Введите почту *" required="">
                 </li>
               </ul>
             </fieldset>
@@ -182,7 +185,7 @@
                 <legend class="feedback-form__title">С каким приложением путешествовали?</legend>
                 <ul class="feedback-form__app-list">
                   <li class="feedback-form__app-item">
-                    <input class="visually-hidden feedback-form__radio" type="radio" name="ios" id="ios" checked>
+                    <input class="visually-hidden feedback-form__radio" type="radio" name="ios" id="ios" checked="">
                     <label class="feedback-form__label feedback-form__label--progress" for="ios">Pink для iOS</label>
                   </li>
                   <li class="feedback-form__app-item">
@@ -218,12 +221,12 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo logo">
           <a class="logo__link" href="index.html">
-            <svg class="logo__logo-icon logo__logo-tablet"  width="140" height="40">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink"  xlink:href="#logo-pink-tablet">
+            <svg class="logo__logo-icon logo__logo-tablet" width="150" height="40">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-tablet">
               </use>
             </svg>
-            <svg class="logo__logo-icon logo__logo-desktop" width="140" height="40">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink"  xlink:href="#logo-pink-desktop">
+            <svg class="logo__logo-icon logo__logo-desktop" width="150" height="40">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-desktop">
               </use>
             </svg>
           </a>
@@ -251,7 +254,7 @@
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__link-logo" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-htmlacademy">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy">
               </use>
             </svg>
             <span class="visually-hidden">Логотип HTML Academy</span>
@@ -261,6 +264,7 @@
     </footer>
 
     <section class="modal">
+      <h2 class="visually-hidden">Модальные окна</h2>
       <div class="modal_content">
         <span class="modal__title">Что-то пошло не так!</span>
         <p class="modal__discpitrtion">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>

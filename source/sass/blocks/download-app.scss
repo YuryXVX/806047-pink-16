@@ -25,6 +25,14 @@
   height: 314px;
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .download-app__wrapper::before {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 255px 289px;
+    top: -288px;
+  }
+}
+
 .download-app__wrapper {
   width: 320px;
   box-sizing: border-box;

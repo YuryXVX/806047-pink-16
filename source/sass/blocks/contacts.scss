@@ -36,6 +36,12 @@
   text-decoration: none;
 }
 
+.contacts__link--email:hover,
+.contacts__link--email:focus {
+  color: $black;
+  border-bottom: 1px solid $black;
+}
+
 .contacts__link--adds {
   padding: 0 35px;
   line-height: 1.4;
