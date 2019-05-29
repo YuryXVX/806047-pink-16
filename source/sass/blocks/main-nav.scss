@@ -113,12 +113,12 @@
   }
 
   .main-nav--opened .main-nav__wrapper {
-    position: absolute;
+    position: relative;
     background: $bg-color;
     width: 100%;
   }
 
-  .main-nav--nojs .site-list {
+  .main-nav--nojs .site-list__items {
     display: block;
   }
 
