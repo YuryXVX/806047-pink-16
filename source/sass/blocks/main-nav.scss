@@ -188,12 +188,10 @@
   .main-nav__wrapper {
     width: 940px;
     flex-direction: row;
-    align-items: baseline;
   }
 
   .main-nav__logo {
-    margin: 0;
-    margin-right: auto;
+    margin: 25px auto 0 0;
   }
 
   .main-nav__toggle {

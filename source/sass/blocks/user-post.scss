@@ -192,8 +192,27 @@
 }
 
 @media (min-width: $desktop-width) {
+  .users-post {
+    overflow: hidden;
+  }
+
   .users-post__list {
+    width: 960px;
     margin: 0 auto;
+  }
+
+  .users-post__photo-link--panorama {
+    width: 100vw;
+    display: block;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+  .users-post__photo-link--panorama img {
+    max-width: 100%;
   }
 
   .users-post__photo-mobile--panorama {

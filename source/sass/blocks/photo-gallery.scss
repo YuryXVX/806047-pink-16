@@ -71,11 +71,12 @@
     .photo-gallery__header {
       padding: 95px 112px 75px;
     }
-  }
 
-  .photo-gallery__title {
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 105px;
+    .photo-gallery__title {
+      width: 500px;
+      padding-bottom: 105px;
+      margin: 0 auto;
+      text-align: center;
+    }
   }
 }
