@@ -125,6 +125,10 @@
   .main-nav--nojs {
     display: block;
   }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
