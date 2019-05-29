@@ -11,7 +11,7 @@
   text-align: center;
   position: relative;
   color: $black;
-  margin-bottom: 36px;
+  margin-bottom: 31px;
 }
 
 .rewiew__item {
@@ -77,6 +77,7 @@
   .rewiew__wrapper {
     width: 940px;
     margin-top: 185px;
+    margin-bottom: 28px;
   }
 
   .rewiew__list {
@@ -133,6 +134,14 @@
     height: 30px;
     border: 2px solid rgba($bg-color, $alpha: 0.3);
     transform: rotate(45deg);
+  }
+
+  .rewiew__toggle-desktop:hover::before {
+    border-color: rgba($bg-color, $alpha: 0.6);
+  }
+
+  .rewiew__toggle-desktop:active::before {
+    border-color: rgba($bg-color, $alpha: 0.1);
   }
 
   .rewiew_prev::before {

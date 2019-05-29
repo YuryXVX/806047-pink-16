@@ -35,6 +35,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .copyright {
+    margin-top: 9px;
+    margin-right: 4px;
+  }
+
   .copyright__link-logo {
     width: 45px;
     height: 45px;

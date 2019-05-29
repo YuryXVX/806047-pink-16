@@ -7,13 +7,17 @@
 }
 
 .social__item {
+  margin: 0 8px;
+}
+
+.social__link {
+  display: block;
   width: 46px;
   height: 46px;
   border-radius: 50%;
   border: 3px solid rgba($color: $bg-color, $alpha: 0.1);
   background-position: center center;
   background-repeat: no-repeat;
-  margin: 0 8px;
 
   &:hover,
   &:focus {
@@ -26,15 +30,15 @@
   }
 }
 
-.social__item--twitter {
+.social__link--twitter {
   background-image: url("../img/icon-twitter.svg");
 }
 
-.social__item--facebook {
+.social__link--facebook {
   background-image: url("../img/icon-facebook.svg");
 }
 
-.social__item--youtube {
+.social__link--youtube {
   background-image: url("../img/icon-youtube.svg");
 }
 

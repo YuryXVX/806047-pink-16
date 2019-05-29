@@ -1,6 +1,7 @@
 
 .contacts {
   color: $black;
+  padding-bottom: 5px;
 }
 
 .contacts__title {
@@ -20,7 +21,7 @@
 .contacts__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .contacts__discription {
@@ -29,16 +30,23 @@
 }
 
 .contacts__link {
-  margin-top: -5px;
+  margin-top: -8px;
   font-weight: 300;
   color: $pink;
   font-size: 24px;
   text-decoration: none;
 }
 
+.contacts__link:hover,
+.contacts__link:focus {
+  color: $black;
+  text-decoration: underline;
+}
+
 .contacts__link--adds {
   padding: 0 35px;
   line-height: 1.4;
+  margin-top: -4px;
 }
 
 @media (min-width: $tablet-width) {
@@ -56,11 +64,12 @@
   }
 
   .contacts__item {
+    width: 240px;
     margin: 21px 20px;
   }
 
   .contacts__link--adds {
-    padding: 0 181px;
+    padding: 0 10px;
   }
 }
 
@@ -76,15 +85,13 @@
   }
 
   .contacts__list {
-    box-sizing: border-box;
-    width: 940px;
     margin: 0 auto;
-    padding: 0 25px 50px 38px;
+    padding: 0 31px 22px 30px;
     justify-content: space-between;
   }
 
   .contacts__item {
-    width: 237px;
+    width: 245px;
     margin: 0;
   }
 

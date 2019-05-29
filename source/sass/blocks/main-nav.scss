@@ -113,17 +113,21 @@
   }
 
   .main-nav--opened .main-nav__wrapper {
-    position: absolute;
+    position: relative;
     background: $bg-color;
     width: 100%;
+  }
+
+  .main-nav--nojs .site-list__items {
+    display: block;
   }
 
   .main-nav--nojs {
     display: block;
   }
 
-  .main-nav--nojs .site-list {
-    display: block;
+  .main-nav__toggle {
+    display: none;
   }
 }
 
@@ -142,6 +146,7 @@
     margin-top: 27px;
     margin-right: auto;
     margin-bottom: 20px;
+    margin-left: 12px;
   }
 
   .main-nav__logo-tablet {
@@ -162,7 +167,8 @@
   }
 
   .main-nav__toggle {
-    margin-top: 44px;
+    margin-top: 45px;
+    margin-right: 12px;
   }
 
   .main-nav--opened .main-nav__toggle::before,

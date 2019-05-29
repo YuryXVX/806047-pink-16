@@ -1,6 +1,6 @@
 
 .contest-feedback {
-  padding-top: 101px;
+  padding-top: 95px;
   background-color: $bg-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -19,19 +19,19 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
-  padding: 0 60px 50px;
+  padding: 0 42px 51px;
   color: $white;
 }
 
 .contest-feedback__header {
   background-color: $white;
   text-align: center;
-  padding: 50px 40px;
+  padding: 47px 20px 32px;
 }
 
 @media (min-width: $tablet-width) {
   .contest-feedback {
-    padding-top: 121px;
+    padding-top: 180px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -52,13 +52,13 @@
   }
 
   .contest-feedback__header {
-    padding: 92px 86px 64px 80px;
+    padding: 92px 86px 76px 80px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contest-feedback {
-    padding-top: 184px;
+    padding-top: 196px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top center;

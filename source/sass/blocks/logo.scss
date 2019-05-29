@@ -42,7 +42,20 @@
 @media (min-width: $desktop-width) {
   .logo__logo-desktop {
     display: block;
-    fill: $pink;
+    fill: #d22856;
+  }
+
+  .logo__link:hover,
+  .logo__link:focus {
+    color: $pink;
+  }
+
+  .logo__link:active {
+    color: rgba($pink, $alpha: 0.3);
+  }
+
+  .logo__logo-icon:active path {
+    fill: rgba($pink, $alpha: 0.3);
   }
 
   .logo__logo-tablet {
