@@ -12,10 +12,7 @@
   padding: 16px 85px 15px 85px;
   text-align: center;
   border-top: 1px solid #000000;
-}
-
-.site-list__item:last-child {
-  border-bottom: 1px solid #000000;
+  box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
 }
 
 .site-list__link {
@@ -58,7 +55,7 @@
   }
 
   .site-list__item {
-    padding: 46px 10px 48px 10px;
+    padding: 44px 10px 36px;
     box-shadow: none;
     border: none;
   }

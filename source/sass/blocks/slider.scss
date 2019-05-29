@@ -10,13 +10,35 @@
   line-height: 0;
   width: 6px;
   height: 6px;
-  margin: 5px;
+  margin: 9px;
   border: 3px solid transparent;
   border-radius: 50%;
   cursor: pointer;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
+  background-color: rgba($black, $alpha: 0.3);
+}
+
+.slider__toggles:hover,
+.slider__toggles:focus {
+  background-color: rgba($black, $alpha: 0.6);
+}
+
+.slider__toggles:active {
+  background-color: rgba($black, $alpha: 0.1);
+}
+
+.slider__toggles--active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  top: -6px;
+  left: -7px;
+  height: 5px;
+  border: 4px solid $black;
+  border-radius: 50%;
 }
 
 .slider__item {

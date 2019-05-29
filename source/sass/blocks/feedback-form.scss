@@ -20,7 +20,7 @@
 }
 
 .feedback-form__username-item {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .feedback-form__label {
@@ -38,7 +38,10 @@
   width: 276px;
   box-sizing: border-box;
   border: solid 2px #e5e5e5;
-  padding: 22px 79px 18px 20px;
+  padding: 14px 79px 14px 20px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 1.67;
 }
 
 .feedback-form__text-field:hover,
@@ -83,6 +86,7 @@
 
 .feedback-form__title--contast {
   display: none;
+  padding-bottom: 0;
 }
 
 .feedback-form__progress-list {
@@ -93,7 +97,7 @@
 }
 
 .feedback-form__progress-item {
-  margin-bottom: 51px;
+  margin-bottom: 52px;
 }
 
 .feedback-form__progress-item:last-child {
@@ -106,7 +110,7 @@
   line-height: 1.67;
   font-size: 18px;
   font-weight: 400;
-  padding-left: 50px;
+  padding-left: 56px;
   position: relative;
 }
 
@@ -148,7 +152,7 @@
 }
 
 .feedback-form__app-wrapper {
-  padding-top: 35px;
+  padding-top: 39px;
   background-color: $white-three;
   text-align: center;
 }
@@ -156,7 +160,7 @@
 .feedback-form__contasts {
   border: none;
   padding-top: 34px;
-  margin-bottom: 17px;
+  margin-bottom: 8px;
   text-align: left;
 }
 
@@ -172,24 +176,29 @@
 
 .feedback-form__app {
   border: none;
-  text-align: left;
+  text-align: center;
 }
 
 .feedback-form__app-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: left;
 }
 
 .feedback-form__app-item {
-  margin-bottom: 49px;
+  margin-bottom: 47px;
+}
+
+.feedback-form__app-item:last-child {
+  margin-bottom: 35px;
 }
 
 .feedback-form__radio + label::before {
   content: "";
   display: block;
   position: absolute;
-  left: 0;
+  left: -17px;
   width: 37px;
   height: 36px;
   border-radius: 50%;
@@ -210,7 +219,7 @@
   content: "";
   display: block;
   position: absolute;
-  left: 0;
+  left: -17px;
   width: 37px;
   height: 36px;
   border-radius: 50%;
@@ -229,7 +238,7 @@
 }
 
 .feedack-form__textaria-wrapper {
-  padding-top: 36px;
+  padding-top: 41px;
   margin-bottom: 35px;
 }
 
@@ -245,7 +254,7 @@
   width: 276px;
   border: solid 2px #e5e5e5;
   resize: none;
-  padding: 15px 28px 150px 19px;
+  padding: 15px 28px 125px 19px;
   box-sizing: border-box;
 }
 
@@ -286,7 +295,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 47px;
+    margin-bottom: 72px;
   }
 
   .feedback-form__username {
@@ -315,7 +324,7 @@
     background-color: $white;
     padding: 0;
     order: -3;
-    margin-bottom: 56px;
+    margin-bottom: 66px;
   }
 
   .feedback-form__app {
@@ -331,11 +340,13 @@
   }
 
   .feedback-form__radio + label::before {
-    left: -10px;
+    left: -12px;
+    top: -7px;
   }
 
   .feedback-form__radio:checked + label::before {
-    left: -10px;
+    left: -12px;
+    top: -7px;
   }
 
   .feedback-form__title {
@@ -349,7 +360,7 @@
     width: 616px;
     margin: 0 auto;
     border: 2px solid #e5e5e5;
-    padding: 39px 57px 0 57px;
+    padding: 27px 57px 0 57px;
     order: -2;
     margin-bottom: 55px;
   }
@@ -401,11 +412,12 @@
     box-sizing: border-box;
     width: 616px;
     border: 2px solid #e5e5e5;
-    padding: 34px 60px;
+    padding: 34px 60px 52px;
   }
 
   .feedback-form__textfield {
     width: 100%;
+    padding: 10px 28px 113px 19px;
   }
 
   .feedback-form__button-wrapper {
@@ -422,14 +434,14 @@
   .feedback-form__label--contasts::before {
     content: "";
     width: 60px;
-    height: 56px;
+    height: 59px;
     display: block;
     z-index: 2;
     position: absolute;
     background-color: #e5e5e5;
     background-position: center center;
     background-repeat: no-repeat;
-    top: -70px;
+    top: -73px;
     left: 416px;
   }
 
@@ -451,6 +463,7 @@
   .feedback-form__form {
     width: 936px;
     margin: 0 auto;
+    overflow: hidden;
     justify-content: space-between;
   }
 
@@ -487,6 +500,7 @@
 
   .feedback-form__contasts {
     width: 936px;
+    padding-top: 33px;
   }
 
   .feedback-form__contasts-item {
@@ -498,8 +512,16 @@
     justify-content: space-between;
   }
 
+  .feedback-form__label--contasts {
+    margin: 10px 0 0 20px;
+  }
+
   .feedback-form__text-field--contasts {
     width: 371px;
+  }
+
+  .feedback-form__progress-wrapper {
+    margin-bottom: 16px;
   }
 
   .feedback-form__progress {
@@ -548,12 +570,12 @@
   }
 
   .feedback-form__textaria {
-    width: 936px;
+    width: 932px;
     padding: 34px 60px 40px;
   }
 
   .feedback-form__textfield {
-    padding-bottom: 74px;
+    padding-bottom: 54px;
   }
 
   .feedback-form__button-wrapper {
@@ -562,6 +584,7 @@
 
   .feedback-form__label--contasts::before {
     left: 290px;
+    top: -70px;
   }
 
   .feedback-form__required-text {

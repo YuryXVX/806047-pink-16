@@ -52,7 +52,8 @@
 }
 
 .photo-filter__icon:active {
-  color: $pink;
+  fill: $pink;
+  opacity: 1;
 }
 
 .photo-filter__icon--crop {
@@ -106,6 +107,7 @@
 
 .photo-filter__button {
   width: 280px;
+  font: inherit;
   font-size: 18px;
   box-sizing: border-box;
   padding: 14px 88px 15px 87px;
@@ -129,6 +131,7 @@
 
 .photo-filter__button--cancel {
   width: 280px;
+  font: inherit;
   font-size: 18px;
   box-sizing: border-box;
   background-color: transparent;
@@ -154,9 +157,10 @@
 
 @media (min-width: $tablet-width) {
   .photo-filter__form {
-    width: 660px;
-    padding: 53px 40px 30px 12px;
+    width: 640px;
+    padding: 50px 23px 28px 12px;
     flex-direction: row;
+    box-sizing: border-box;
     flex-wrap: wrap;
   }
 
@@ -209,11 +213,13 @@
   .photo-filter__controls-wrapper {
     align-self: center;
     padding-right: 6px;
+    margin-top: -8px;
   }
 
   .photo-filter__controls {
     width: 202px;
     margin-bottom: 68px;
+    margin-top: 17px;
   }
 
   .photo-filter__controls::after {
@@ -240,7 +246,7 @@
 
   .photo-filter__button {
     width: 260px;
-    padding: 14px 88px 15px 78px;
+    padding: 14px 88px 15px 74px;
     margin-bottom: 26px;
   }
 
@@ -265,7 +271,7 @@
   .photo-filter__form {
     width: 940px;
     box-sizing: border-box;
-    padding: 60px 60px 27px 80px;
+    padding: 60px 60px 31px 80px;
   }
 
   .photo-filter__wrapper {
@@ -294,12 +300,19 @@
   }
 
   .photo-filter__controls-wrapper {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-right: 29px;
     align-self: baseline;
   }
 
+  .photo-filter__options-item {
+    margin-bottom: 22px;
+  }
+
   .photo-filter__buttons {
+    margin: 0;
+    margin-top: 8px;
+    margin-left: auto;
     flex-direction: row;
   }
 
